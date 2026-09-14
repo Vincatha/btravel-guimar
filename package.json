@@ -1,0 +1,27 @@
+{
+  "name": "btravel-guimar",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Web de B Travel Güímar — viajes de grupo desde Tenerife",
+  "scripts": {
+    "cifrar": "node scripts/cifrar-itinerarios.mjs",
+    "build": "npm run cifrar && eleventy && npm run verificar",
+    "start": "npm run cifrar && eleventy --serve",
+    "dev": "npm run start",
+    "verificar": "node scripts/verificar-privado.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@ogtirth/liquid-glass-oss": "^0.1.0",
+    "js-yaml": "^4.1.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "esbuild": "^0.28.2"
+  }
+}

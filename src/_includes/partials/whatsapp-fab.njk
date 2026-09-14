@@ -1,0 +1,9 @@
+{% import "macros/iconos.njk" as ic %}
+{% import "macros/ui.njk" as ui %}
+
+<a class="wa-fab"
+   href="{{ ui.waHref(site.whatsapp_mensajes.general, site) }}"
+   target="_blank" rel="noopener"
+   aria-label="Escribir a {{ site.nombre }} por WhatsApp">
+  {{ ic.whatsapp() }}
+</a>

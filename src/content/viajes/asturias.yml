@@ -1,0 +1,148 @@
+# Actualizado con el itinerario aportado por la agencia el 13 de septiembre de 2026.
+orden: 9
+estado: publicado
+fuente:
+  documento: ITINERARIO ASTURIAS.pdf
+  fecha_documento: null
+  version: Itinerario terminado aportado por la agencia el 13 de septiembre de 2026
+  notas: >-
+    Resumen público autorizado por la agencia. Itinerario completo, condiciones y calendario de pagos mediante
+    contacto directo.
+publico:
+  destino: Asturias
+  titular: Nos vamos a Asturias en abril
+  subtitulo: Oviedo, Covadonga, los Lagos, Gijón y la Playa de las Catedrales
+  resumen: >
+    Seis días recorriendo Asturias en grupo y con acompañante desde Güímar, con base en Oviedo: Cudillero y su
+    puerto, el santuario de Covadonga y los Lagos, Cangas de Onís, Gijón y, ya en la costa de Lugo, Ribadeo y
+    la Playa de las Catedrales. Vuelo directo desde Tenerife Norte.
+  fechas:
+    confirmado: true
+    etiqueta: 15–20 abr 2027
+    inicio: 2027-04-15T00:00:00.000Z
+    fin: 2027-04-20T00:00:00.000Z
+  duracion:
+    confirmado: true
+    etiqueta: 6 días / 5 noches
+  precio:
+    confirmado: true
+    valor: 790
+    moneda: EUR
+    base: por persona en habitación doble
+  suplemento_individual:
+    confirmado: true
+    etiqueta: 200 €
+    valor: 200
+  salida:
+    confirmado: true
+    lugar: Tenerife Norte
+  regimen_resumen:
+    confirmado: true
+    etiqueta: Media pensión (almuerzos)
+  plazas:
+    mostrar: false
+    estado: null
+  destacados:
+    confirmado: true
+    items:
+      - Covadonga y los Picos de Europa; subida a los Lagos opcional y sujeta al tiempo
+      - Cudillero, pueblo pesquero encajado en la ladera
+      - "Oviedo con guía local: la catedral, el casco antiguo y el Teatro Campoamor"
+      - Cangas de Onís y su puente romano sobre el Sella con la Cruz de la Victoria
+      - "Gijón: Cimadevilla, la playa de San Lorenzo y el «Elogio del Horizonte» de Chillida"
+      - La Playa de las Catedrales en Ribadeo y la villa de Mondoñedo
+  ruta_resumida:
+    confirmado: true
+    items:
+      - Oviedo
+      - Cudillero
+      - Covadonga
+      - Lagos de Covadonga
+      - Cangas de Onís
+      - Gijón
+      - Ribadeo
+      - Playa de las Catedrales
+      - Mondoñedo
+  incluye:
+    confirmado: true
+    items:
+      - Vuelo directo Tenerife Norte – Oviedo, ida y vuelta, con maleta facturada
+      - Traslado de Güímar al aeropuerto, ida y vuelta
+      - Autocar con A/C durante todo el recorrido
+      - 5 noches en hotel de 4★ céntrico en Oviedo
+      - Régimen de media pensión (desayuno y almuerzo)
+      - Guías locales de habla hispana
+      - Todas las visitas indicadas en el itinerario
+      - Acompañante de B Travel Güímar durante todo el viaje
+  no_incluye:
+    confirmado: true
+    items:
+      - Seguro de viaje y cancelación (opcional)
+      - Bebidas en las comidas
+      - Cenas y almuerzo del último día
+      - Suplemento de habitación individual
+      - Entradas y servicios no especificados en el itinerario
+      - Subida a los Lagos de Covadonga (sujeta a las condiciones meteorológicas)
+  itinerario_resumen:
+    confirmado: true
+    bloques:
+      - dias: Día 1
+        titulo: Vuelo a Oviedo y Cudillero
+        texto: >-
+          Recogida del grupo en Güímar y traslado a Tenerife Norte. Vuelo directo a Oviedo y almuerzo en
+          restaurante. Por la tarde, visita de Cudillero, pueblo pesquero encajado en la ladera, con su
+          iglesia de San Pablo y el faro de la punta. Traslado al hotel en Oviedo.
+      - dias: Día 2
+        titulo: Oviedo
+        texto: >-
+          Visita de Oviedo con guía local: una panorámica por el Palacio de Congresos, el Campo de San
+          Francisco y el Teatro Campoamor, donde se entregan los Premios Princesa de Asturias. Exteriores de
+          la catedral, la plaza de Trascorrales, la plaza del Ayuntamiento y el Mercado. Almuerzo en
+          restaurante y tarde libre.
+      - dias: Día 3
+        titulo: Covadonga, los Lagos y Cangas de Onís
+        texto: >-
+          Visita del santuario de Covadonga y de Cangas de Onís. Posibilidad de subir a los Lagos, no incluida
+          y sujeta a las condiciones meteorológicas.
+      - dias: Día 4
+        titulo: Gijón
+        texto: >-
+          Gijón y la Universidad Laboral con guía local. El cerro de Santa Catalina con el «Elogio del
+          Horizonte» de Eduardo Chillida, el barrio de Cimadevilla y las playas de San Lorenzo y de Poniente.
+          Almuerzo en restaurante y tiempo libre.
+      - dias: Día 5
+        titulo: Ribadeo, Playa de las Catedrales y Mondoñedo
+        texto: >-
+          Salida hacia Ribadeo, con sus dársenas de Porcillán y Cabanela y los restos de su muralla. Visita de
+          la Playa de las Catedrales, según el estado de la marea. Almuerzo en restaurante y, por la tarde,
+          Mondoñedo, una de las siete capitales del antiguo Reino de Galicia: el exterior de su catedral y la
+          Plaza de España, con la escultura de Álvaro Cunqueiro.
+      - dias: Día 6
+        titulo: Regreso a Tenerife
+        texto: >-
+          Desayuno y tiempo libre en Oviedo. A la hora indicada, recogida en el hotel y traslado al aeropuerto
+          para el vuelo directo de Oviedo a Tenerife Norte. Llegada y traslado a Güímar.
+  galeria:
+    - archivo: viajes/asturias/asturias-01.jpg
+      alt: >-
+        El lago Enol, en los Lagos de Covadonga, rodeado de prados verdes y con las cumbres de los Picos de
+        Europa al fondo
+      placeholder: Asturias — Lagos de Covadonga
+privado:
+  disponible: false
+  aviso: Solicita a la agencia el itinerario completo, las condiciones y el calendario de pagos.
+  itinerario: []
+  vuelos: []
+  hoteles: []
+  regimen_detalle: null
+  planes_pago:
+    confirmado: false
+    plazos: []
+  notas_operativas: null
+seo:
+  title: Viaje a Asturias desde Tenerife · abril 2027 | B Travel Güímar
+  description: >
+    Seis días recorriendo Asturias en grupo y con acompañante desde Güímar, con base en Oviedo: Cudillero y su
+    puerto, el santuario de Covadonga y los Lagos, Cangas de Onís, Gijón y, ya en la costa de Lugo, Ribadeo y
+    la Playa de las Catedrales. Vuelo directo desde Tenerife Norte.
+  og_image: viajes/asturias/og-asturias.jpg

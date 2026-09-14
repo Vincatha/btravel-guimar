@@ -1,0 +1,134 @@
+# Actualizado con la versión corregida aportada por la agencia el 13 de septiembre de 2026.
+orden: 5
+estado: publicado
+fuente:
+  documento: ITINERARIO ESCOCIA.pdf
+  fecha_documento: null
+  version: Versión corregida confirmada por la agencia el 13 de septiembre de 2026
+  notas: >-
+    Resumen público autorizado por la agencia. Itinerario completo, condiciones y calendario de pagos mediante
+    contacto directo. La versión corregida confirma Tenerife Sur en portada y programa.
+publico:
+  destino: Escocia
+  titular: Nos vamos a Escocia en primavera
+  subtitulo: Castillos, lagos y Tierras Altas
+  resumen: >-
+    Nueve días por Escocia en grupo: Glasgow, castillos, la isla de Skye y el lago Ness, las Tierras Altas y
+    Edimburgo. Un recorrido de paisajes y ciudades con guía de habla hispana y acompañante de B Travel Güímar.
+  fechas:
+    confirmado: true
+    etiqueta: 23 abr – 1 may 2027
+    inicio: 2027-04-23T00:00:00.000Z
+    fin: 2027-05-01T00:00:00.000Z
+  duracion:
+    confirmado: true
+    etiqueta: 9 días / 8 noches
+  precio:
+    confirmado: true
+    valor: 2490
+    moneda: EUR
+    base: por persona en habitación doble
+  suplemento_individual:
+    confirmado: true
+    etiqueta: 550 €
+    valor: 550
+  salida:
+    confirmado: true
+    lugar: Tenerife Sur
+  regimen_resumen:
+    confirmado: true
+    etiqueta: Media pensión + 5 almuerzos
+  plazas:
+    mostrar: false
+    estado: null
+  destacados:
+    confirmado: true
+    items:
+      - Isla de Skye y castillo de Eilean Donan
+      - Lago Ness y las Tierras Altas
+      - Edimburgo y su castillo
+      - Visita a una destilería de whisky
+  ruta_resumida:
+    confirmado: true
+    items:
+      - Glasgow
+      - Loch Lomond
+      - Skye
+      - Lago Ness
+      - Inverness
+      - St Andrews
+      - Edimburgo
+  incluye:
+    confirmado: true
+    items:
+      - Vuelos directos Tenerife Sur–Edimburgo, ida y vuelta, con maleta facturada de 20 kg
+      - Autocar durante el recorrido
+      - 8 noches en hoteles de 3 estrellas
+      - Desayunos, cenas y 5 almuerzos
+      - Guías locales de habla hispana
+      - Entradas a los castillos de Stirling, Urquhart y Edimburgo
+      - Fort George y catedrales de San Mungo, Elgin y St. Andrews
+      - Visita a una destilería de whisky con cata
+      - Acompañante de B Travel Güímar durante todo el viaje
+  no_incluye:
+    confirmado: true
+    items:
+      - Seguro opcional de viaje y cancelación
+      - Bebidas y almuerzos no indicados
+      - Autorización de entrada (ETA)
+      - Entradas y servicios no especificados
+  itinerario_resumen:
+    confirmado: true
+    bloques:
+      - dias: 23–24 abril
+        titulo: Glasgow y el whisky
+        texto: Llegada a Escocia, traslado a Glasgow y visita de la ciudad y una destilería con cata.
+      - dias: 25 abril
+        titulo: Stirling y Loch Lomond
+        texto: Visita al castillo de Stirling y parada en Luss, junto al lago Lomond. Noche en la costa oeste.
+      - dias: 26–27 abril
+        titulo: Skye y el lago Ness
+        texto: >-
+          Ferry a Skye, panorámica del sur de la isla y parada en Eilean Donan. Lago Ness, castillo de
+          Urquhart, Fort Augustus e Inverness.
+      - dias: 28–29 abril
+        titulo: De las Tierras Altas a Edimburgo
+        texto: >-
+          Fort George, Elgin y Aberdeen. Parada fotográfica en Dunnottar y visita de St. Andrews antes de
+          llegar a Edimburgo.
+      - dias: 30 abril–1 mayo
+        titulo: Edimburgo y regreso
+        texto: Visita guiada de la ciudad con entrada al castillo, tiempo libre y vuelo de vuelta a Tenerife.
+  galeria:
+    - archivo: viajes/escocia/escocia-01.jpg
+      alt: Tren de vapor cruzando el viaducto de Glenfinnan
+      placeholder: Escocia — Glenfinnan
+    - archivo: viajes/escocia/escocia-02.jpg
+      alt: El Quiraing, en la isla de Skye
+      placeholder: Escocia — Skye
+    - archivo: viajes/escocia/escocia-03.jpg
+      alt: Dean Village, a orillas del Water of Leith, en Edimburgo
+      placeholder: Escocia — Edimburgo
+    - archivo: viajes/escocia/escocia-04.jpg
+      alt: El castillo de Kilchurn reflejado en el lago Awe
+      placeholder: Escocia — Kilchurn
+    - archivo: viajes/escocia/escocia-05.jpg
+      alt: El castillo de Eilean Donan
+      placeholder: Escocia — Eilean Donan
+privado:
+  disponible: false
+  aviso: Solicita a la agencia el itinerario completo, las condiciones y el calendario de pagos.
+  itinerario: []
+  vuelos: []
+  hoteles: []
+  regimen_detalle: null
+  planes_pago:
+    confirmado: false
+    plazos: []
+  notas_operativas: null
+seo:
+  title: Viaje a Escocia desde Tenerife · 2027 | B Travel Güímar
+  description: >-
+    Nueve días por Escocia en grupo: Glasgow, castillos, la isla de Skye y el lago Ness, las Tierras Altas y
+    Edimburgo. Un recorrido de paisajes y ciudades con guía de habla hispana y acompañante de B Travel Güímar.
+  og_image: viajes/escocia/og-escocia.jpg

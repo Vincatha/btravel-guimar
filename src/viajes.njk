@@ -1,0 +1,13 @@
+---
+pagination:
+  data: viajes
+  size: 1
+  alias: viaje
+permalink: "/viaje-{{ viaje.slug }}.html"
+layout: layouts/ficha.njk
+eleventyComputed:
+  title: "{{ viaje.seo.title or ('Viaje a ' + viaje.publico.destino + ' | ' + site.nombre) }}"
+  descripcion: "{{ viaje.seo.description or viaje.publico.resumen }}"
+  ogImagen: "{{ viaje.seo.og_image }}"
+  robots: "{{ 'index, follow' if viaje.esPublicado else 'noindex, nofollow' }}"
+---

@@ -1,0 +1,21 @@
+# Configuración de despliegue en Netlify.
+# El sitio se reconstruye automáticamente en cada push al repositorio.
+
+[build]
+  command = "npm run build"
+  publish = "_site"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Los itinerarios cifrados no deben indexarse ni cachearse.
+[[headers]]
+  for = "/private/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+    Cache-Control = "no-store"
+
+# Las contraseñas de cada itinerario se configuran como variables de entorno
+# en el panel de Netlify (Site settings → Environment variables), con el nombre
+# ITINERARIO_PW_<SLUG_EN_MAYUSCULAS>, por ejemplo ITINERARIO_PW_JAPON.
+# Mientras no existan, el itinerario privado simplemente no se genera.

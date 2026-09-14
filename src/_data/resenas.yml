@@ -1,0 +1,27 @@
+# ─────────────────────────────────────────────────────────────────────────────
+#  RESEÑAS DE GOOGLE de B Travel Güímar
+#
+#  modo:
+#    pendiente → la web muestra "⟨RESEÑAS GOOGLE — PENDIENTE DE CONFIGURACIÓN⟩"
+#                (más el enlace a Google si hay place_url)
+#    manual    → se muestran las de "items" (añadidas a mano de vez en cuando)
+#    auto      → las trae el build desde una API y las escribe aquí el script
+#                scripts/traer-resenas.mjs  (aún no implementado; requiere decisión)
+#
+#  NO inventar autores, textos, estrellas, nota media ni número de reseñas.
+# ─────────────────────────────────────────────────────────────────────────────
+
+modo: pendiente
+
+titulo: "Lo que cuentan en Google los que ya han viajado con nosotros"
+
+# URL pública de la ficha de Google Maps / Google Business de B Travel Güímar.
+place_url: null            # ⟨PENDIENTE⟩
+
+# Solo con datos reales verificados. Mientras sean null, no se muestran.
+nota_media: null           # p. ej. 4.9  — NO inventar
+total: null                # p. ej. 87   — NO inventar
+
+# Reseñas concretas (modo manual o auto). Cada una:
+#   { autor: "", texto: "", estrellas: 5, fecha: "2026-06", url: "" }
+items: []

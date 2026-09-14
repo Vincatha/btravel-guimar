@@ -1,0 +1,18 @@
+---
+layout: layouts/base.njk
+title: "Página no encontrada | B Travel Güímar"
+robots: "noindex, nofollow"
+permalink: /404.html
+eleventyExcludeFromCollections: true
+---
+{% import "macros/ui.njk" as ui %}
+<section class="seccion">
+  <div class="contenedor" style="text-align:center">
+    <h1>Esta página no existe</h1>
+    <p style="margin:var(--e2) auto var(--e4)">Puede que el enlace esté roto o que la página se haya movido.</p>
+    <div style="display:flex;gap:var(--e2);justify-content:center;flex-wrap:wrap">
+      <a class="btn btn--primario" href="/">Ir al inicio</a>
+      {{ ui.botonWa(site.whatsapp_mensajes.general, site, "Escríbenos por WhatsApp") }}
+    </div>
+  </div>
+</section>

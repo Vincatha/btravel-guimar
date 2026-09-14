@@ -1,0 +1,159 @@
+# Actualizado con el itinerario aportado por la agencia el 13 de septiembre de 2026.
+orden: 7
+estado: publicado
+fuente:
+  documento: ITINERARIO COSTA BRAVA.pdf
+  fecha_documento: null
+  version: Itinerario terminado aportado por la agencia el 13 de septiembre de 2026
+  notas: >-
+    Resumen público autorizado por la agencia. Itinerario completo, condiciones y calendario de pagos mediante
+    contacto directo. El almuerzo del último día figura incluido en el recorrido y excluido en condiciones: se
+    remite a la agencia.
+publico:
+  destino: Costa Brava
+  titular: Nos vamos a la Costa Brava en mayo
+  subtitulo: Begur, Cadaqués, Girona y un día en Barcelona
+  resumen: >
+    Siete días con base en Roses para recorrer la Costa Brava en grupo y con acompañante desde Güímar: los
+    pueblos con encanto de Begur y Pals, Cadaqués en barco, Besalú y Figueres, Girona y un día completo en
+    Barcelona. Vuelo directo desde Tenerife Norte.
+  fechas:
+    confirmado: true
+    etiqueta: 19–25 may 2027
+    inicio: 2027-05-19T00:00:00.000Z
+    fin: 2027-05-25T00:00:00.000Z
+  duracion:
+    confirmado: true
+    etiqueta: 7 días / 6 noches
+  precio:
+    confirmado: true
+    valor: 890
+    moneda: EUR
+    base: por persona en habitación doble
+  suplemento_individual:
+    confirmado: true
+    etiqueta: 230 €
+    valor: 230
+  salida:
+    confirmado: true
+    lugar: Tenerife Norte
+  regimen_resumen:
+    confirmado: true
+    etiqueta: Pensión completa con excepciones según programa
+  plazas:
+    mostrar: false
+    estado: null
+  destacados:
+    confirmado: true
+    items:
+      - Begur y Pals, dos de los pueblos más bonitos de la Costa Brava
+      - Cadaqués por mar, con paseo en barco por su litoral rocoso
+      - El Teatro-Museo Dalí de Figueres y el Besalú medieval
+      - El barrio judío y la catedral gótica de Girona
+      - "Un día completo en Barcelona: Sagrada Familia, Montjuïc y las Ramblas"
+      - Paseo en tren turístico por la costa
+  ruta_resumida:
+    confirmado: true
+    items:
+      - Roses
+      - Begur
+      - Pals
+      - Banyoles
+      - Besalú
+      - Figueres
+      - Girona
+      - Barcelona
+      - Cadaqués
+  incluye:
+    confirmado: true
+    items:
+      - Vuelo directo Tenerife Norte – Barcelona, ida y vuelta
+      - Traslado de Güímar al aeropuerto, ida y vuelta
+      - Autocar con A/C durante todo el recorrido
+      - 6 noches en el hotel Prestige Sant Marc 4★, en Roses
+      - Pensión completa con excepciones; consulta las comidas incluidas con la agencia
+      - Agua y vino en las comidas
+      - Guías locales de habla hispana
+      - Todas las entradas indicadas en el itinerario
+      - Entrada al Teatro-Museo Dalí
+      - Excursión en barco a Cadaqués
+      - Paseo en tren turístico
+      - Tasas turísticas
+      - Acompañante de B Travel Güímar durante todo el viaje
+  no_incluye:
+    confirmado: true
+    items:
+      - Seguro de viaje y cancelación (opcional)
+      - Almuerzo en Barcelona; consulta con la agencia el almuerzo del último día
+      - Suplemento de habitación individual
+      - Entradas no especificadas en el itinerario
+  itinerario_resumen:
+    confirmado: true
+    bloques:
+      - dias: Día 1
+        titulo: Vuelo a Barcelona
+        texto: >-
+          Salida desde Tenerife Norte en vuelo directo a Barcelona y traslado al hotel en Roses. Cena y
+          alojamiento.
+      - dias: Día 2
+        titulo: Begur, Pals y tren turístico
+        texto: >-
+          Visita de Begur, uno de los pueblos más emblemáticos de la Costa Brava, y de Pals, con su núcleo
+          antiguo de El Pedró y restos de muralla. Por la tarde, paseo en tren turístico por la costa.
+      - dias: Día 3
+        titulo: Banyoles, Besalú y Figueres
+        texto: >-
+          El lago de Banyoles y la comarca de la Garrotxa, la villa medieval de Besalú con su judería y, por
+          la tarde, Figueres y el Teatro-Museo Dalí. Almuerzo en restaurante.
+      - dias: Día 4
+        titulo: Girona
+        texto: >-
+          Ciudad histórica con uno de los barrios judíos mejor conservados de Europa, la catedral gótica de
+          nave única y el claustro románico. Tarde libre para playa o piscina en Roses.
+      - dias: Día 5
+        titulo: Barcelona
+        texto: >-
+          Día completo en la capital catalana: visita panorámica por el Paseo de Gracia, la Plaza de España,
+          Montjuïc y el anillo olímpico, la Sagrada Familia, el barrio gótico y las Ramblas con el mercado de
+          La Boquería. Almuerzo y tarde libres.
+      - dias: Día 6
+        titulo: Cadaqués en barco
+        texto: >-
+          Salida en barco hasta Cadaqués para recorrer su litoral rocoso y sus calas, y tiempo en su casco
+          histórico de sabor marinero. Tarde libre en Roses.
+      - dias: Día 7
+        titulo: Vuelta a Tenerife
+        texto: >-
+          Mañana libre en Roses y traslado al aeropuerto de Barcelona para el vuelo directo a Tenerife Norte.
+          Traslado a Güímar.
+  galeria:
+    - archivo: viajes/costa-brava/costa-brava-01.jpg
+      alt: Las casas blancas de Calella de Palafrugell sobre el mar turquesa de la Costa Brava
+      placeholder: Costa Brava — Calella de Palafrugell
+    - archivo: viajes/costa-brava/costa-brava-02.jpg
+      alt: Barcas de recreo fondeadas en una cala de aguas turquesas entre acantilados, en la Costa Brava
+      placeholder: Costa Brava — cala con barcas
+    - archivo: viajes/costa-brava/costa-brava-03.jpg
+      alt: El camino de ronda pasando bajo un túnel de roca, con el mar y la costa al fondo
+      placeholder: Costa Brava — camino de ronda
+    - archivo: viajes/costa-brava/costa-brava-04.jpg
+      alt: Una cala recogida entre pinos y acantilados, con agua transparente y una pequeña playa
+      placeholder: Costa Brava — cala entre pinos
+privado:
+  disponible: false
+  aviso: Solicita a la agencia el itinerario completo, las condiciones y el calendario de pagos.
+  itinerario: []
+  vuelos: []
+  hoteles: []
+  regimen_detalle: null
+  planes_pago:
+    confirmado: false
+    plazos: []
+  notas_operativas: null
+seo:
+  title: Viaje a la Costa Brava desde Tenerife · mayo 2027 | B Travel Güímar
+  description: >
+    Siete días con base en Roses para recorrer la Costa Brava en grupo y con acompañante desde Güímar: los
+    pueblos con encanto de Begur y Pals, Cadaqués en barco, Besalú y Figueres, Girona y un día completo en
+    Barcelona. Vuelo directo desde Tenerife Norte.
+  og_image: viajes/costa-brava/og-costa-brava.jpg

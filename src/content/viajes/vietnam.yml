@@ -1,0 +1,143 @@
+# Actualizado con el itinerario aportado por la agencia el 13 de septiembre de 2026.
+orden: 3
+estado: publicado
+fuente:
+  documento: ITINERARIO VIETNAM.pdf.pdf
+  fecha_documento: null
+  version: Itinerario terminado aportado por la agencia el 13 de septiembre de 2026
+  notas: >-
+    Resumen público autorizado por la agencia. Itinerario completo, condiciones y calendario de pagos mediante
+    contacto directo.
+publico:
+  destino: Vietnam
+  titular: Nos vamos a Vietnam en marzo
+  subtitulo: De Ho Chi Minh a la bahía de Ha Long
+  resumen: >-
+    Trece días recorriendo Vietnam de sur a norte: el delta del Mekong, Hoi An, el Puente Dorado y la ciudad
+    imperial de Hue. Hanói, una noche de crucero en Ha Long y las barcas de Tam Coc completan el viaje, con
+    acompañante desde Tenerife.
+  fechas:
+    confirmado: true
+    etiqueta: 18–30 mar 2027
+    inicio: 2027-03-18T00:00:00.000Z
+    fin: 2027-03-30T00:00:00.000Z
+  duracion:
+    confirmado: true
+    etiqueta: 13 días / 12 noches
+  precio:
+    confirmado: true
+    valor: 2940
+    moneda: EUR
+    base: por persona en habitación doble
+  suplemento_individual:
+    confirmado: true
+    etiqueta: 550 €
+    valor: 550
+  salida:
+    confirmado: true
+    lugar: Tenerife Norte
+  regimen_resumen:
+    confirmado: true
+    etiqueta: Pensión completa según programa
+  plazas:
+    mostrar: false
+    estado: null
+  destacados:
+    confirmado: true
+    items:
+      - Delta del Mekong en barco
+      - El Puente Dorado de Ba Na Hills
+      - Ciudadela Imperial de Hue
+      - Crucero por la bahía de Ha Long
+  ruta_resumida:
+    confirmado: true
+    items:
+      - Ho Chi Minh
+      - Hoi An
+      - Da Nang
+      - Hue
+      - Hanoi
+      - Ha Long
+      - Ninh Binh
+  incluye:
+    confirmado: true
+    items:
+      - Vuelos desde Tenerife vía Madrid y vuelos internacionales con maleta facturada
+      - 2 vuelos internos y autocar con aire acondicionado
+      - Hoteles de 4 y 5 estrellas
+      - Pensión completa según programa
+      - Visitas y entradas indicadas, con guías locales de habla hispana
+      - Crucero con noche a bordo en la bahía de Ha Long
+      - Paseos en barco por el río Hoai y el delta del Mekong; recorrido en xích lô
+      - Una botella de agua y toalla refrescante por día de excursión
+      - Tarjeta SIM de datos de 10 días
+      - Acompañante de B Travel Güímar durante todo el viaje
+  no_incluye:
+    confirmado: true
+    items:
+      - Seguro opcional de viaje y cancelación
+      - Bebidas y almuerzo del último día
+      - Entradas y actividades opcionales no especificadas
+  itinerario_resumen:
+    confirmado: true
+    bloques:
+      - dias: 18–20 marzo
+        titulo: Ho Chi Minh y el Mekong
+        texto: >-
+          Viaje a Ho Chi Minh y recorrido por el delta del Mekong, con canales, aldeas y paseos en tuk tuk y
+          barca. Cena en crucero por el río Saigón.
+      - dias: 21–23 marzo
+        titulo: Hoi An y Hue
+        texto: >-
+          Visita de Ho Chi Minh y vuelo a Da Nang. Ba Na Hills y Puente Dorado, casco antiguo de Hoi An y ruta
+          a Hue con cena imperial.
+      - dias: 24–25 marzo
+        titulo: Hue y Hanói
+        texto: >-
+          Río de los Perfumes, pagoda Thien Mu y Ciudadela Imperial antes de volar a Hanói. Visita de la
+          capital y recorrido en xích lô por el Barrio Antiguo.
+      - dias: 26–28 marzo
+        titulo: Ha Long y Ninh Binh
+        texto: >-
+          Crucero con noche a bordo en Ha Long. Continuación a Ninh Binh para conocer Hoa Lu, navegar en barca
+          por Tam Coc y visitar Bich Dong.
+      - dias: 29–30 marzo
+        titulo: Regreso a Tenerife
+        texto: Tiempo libre en Hanói y vuelos de regreso vía Estambul y Madrid.
+  galeria:
+    - archivo: viajes/vietnam/vietnam-01.jpg
+      alt: Arrozales en terrazas al amanecer en Mu Cang Chai
+      placeholder: Vietnam — arrozales
+    - archivo: viajes/vietnam/vietnam-02.jpg
+      alt: Pabellón sobre el agua entre montañas kársticas en Trang An, Ninh Binh
+      placeholder: Vietnam — Trang An
+    - archivo: viajes/vietnam/vietnam-03.jpg
+      alt: La calle del tren de Hanoi, con farolillos y cafés junto a las vías
+      placeholder: Vietnam — Hanoi
+    - archivo: viajes/vietnam/vietnam-04.jpg
+      alt: Pagoda sobre un pico de roca en el mirador de Hang Mua, Ninh Binh
+      placeholder: Vietnam — Hang Mua
+    - archivo: viajes/vietnam/vietnam-05.jpg
+      alt: El Puente Dorado sostenido por dos manos gigantes, en Da Nang
+      placeholder: Vietnam — Puente Dorado
+    - archivo: viajes/vietnam/vietnam-06.jpg
+      alt: Ciclos por una calle del barrio antiguo de Hanoi
+      placeholder: Vietnam — ciclos
+privado:
+  disponible: false
+  aviso: Solicita a la agencia el itinerario completo, las condiciones y el calendario de pagos.
+  itinerario: []
+  vuelos: []
+  hoteles: []
+  regimen_detalle: null
+  planes_pago:
+    confirmado: false
+    plazos: []
+  notas_operativas: null
+seo:
+  title: Viaje a Vietnam desde Tenerife · marzo 2027 | B Travel Güímar
+  description: >-
+    Trece días recorriendo Vietnam de sur a norte: el delta del Mekong, Hoi An, el Puente Dorado y la ciudad
+    imperial de Hue. Hanói, una noche de crucero en Ha Long y las barcas de Tam Coc completan el viaje, con
+    acompañante desde Tenerife.
+  og_image: viajes/vietnam/og-vietnam.jpg

@@ -1,0 +1,33 @@
+{#- Solo se incluye cuando viaje.esPublicado == true (ver base.njk). -#}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": {{ viaje.publico.destino | dump | safe }},
+  "description": {{ (viaje.seo.description or viaje.publico.resumen) | dump | safe }},
+  "url": {{ (site.url + "/viaje-" + viaje.slug + ".html") | dump | safe }},
+  "provider": {
+    "@type": "TravelAgency",
+    "name": {{ site.nombre | dump | safe }},
+    "url": {{ site.url | dump | safe }}
+  }
+  {%- if viaje.publico.itinerario_resumen.confirmado and viaje.publico.itinerario_resumen.bloques|length %},
+  "itinerary": {
+    "@type": "ItemList",
+    "itemListElement": [
+      {%- for b in viaje.publico.itinerario_resumen.bloques %}
+      { "@type": "ListItem", "position": {{ loop.index }}, "name": {{ b.titulo | dump | safe }} }{{ "," if not loop.last }}
+      {%- endfor %}
+    ]
+  }
+  {%- endif %}
+  {%- if viaje.publico.precio.confirmado and viaje.publico.precio.valor %},
+  "offers": {
+    "@type": "Offer",
+    "price": {{ viaje.publico.precio.valor }},
+    "priceCurrency": {{ viaje.publico.precio.moneda | dump | safe }},
+    "availability": "https://schema.org/InStock"
+  }
+  {%- endif %}
+}
+</script>

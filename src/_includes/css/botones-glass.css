@@ -1,0 +1,49 @@
+/* Acabado de cristal para acciones nativas; no usa el switch React de LiquidGlass. */
+.btn {
+  --glass-base: rgba(255,255,255,.88);
+  --glass-ink: var(--tinta);
+  --glass-edge: rgba(255,255,255,.72);
+  background: linear-gradient(165deg, rgba(255,255,255,.22), rgba(255,255,255,0) 48%), var(--glass-base);
+  color: var(--glass-ink);
+  border-color: var(--glass-edge);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.55), inset 0 -1px 0 rgba(0,0,0,.08), 0 3px 8px rgba(20,35,65,.08), 0 10px 24px rgba(20,35,65,.08);
+  -webkit-backdrop-filter: blur(16px) saturate(150%);
+  backdrop-filter: blur(16px) saturate(150%);
+  transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
+}
+.btn--primario { --glass-base: #304fae; --glass-ink: #fff; --glass-edge: rgba(255,255,255,.32); }
+.btn--wa { --glass-base: rgba(37,208,124,.94); --glass-ink: #08301d; --glass-edge: rgba(255,255,255,.48); }
+.btn--secundario { --glass-edge: rgba(80,100,140,.22); }
+.btn--claro { --glass-base: rgba(255,255,255,.9); --glass-ink: #263e87; }
+.btn--fantasma { --glass-base: rgba(18,27,49,.78); --glass-ink: #fff; --glass-edge: rgba(255,255,255,.55); }
+@media (hover: hover) {
+  .btn:hover {
+    background: linear-gradient(165deg, rgba(255,255,255,.27), rgba(255,255,255,0) 55%), var(--glass-base);
+    border-color: var(--glass-edge);
+    filter: brightness(1.035);
+    transform: translateY(-2px);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.65), inset 0 -1px 0 rgba(0,0,0,.08), 0 5px 12px rgba(20,35,65,.1), 0 14px 28px rgba(20,35,65,.12);
+  }
+}
+.btn:focus-visible { outline: 3px solid #24479f; outline-offset: 4px; box-shadow: 0 0 0 3px #fff; }
+.btn:active { transform: translateY(0) scale(.97); filter: brightness(.97); }
+.btn:disabled { opacity: .55; cursor: wait; transform: none; filter: none; }
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .btn { --glass-base: #fff; }
+  .btn--primario { --glass-base: #304fae; }
+  .btn--wa { --glass-base: #25d07c; }
+  .btn--fantasma { --glass-base: #18243d; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn, .btn:hover, .btn:active { transition: none; transform: none; }
+}
+@media (prefers-reduced-transparency: reduce) {
+  .btn { backdrop-filter: none; -webkit-backdrop-filter: none; --glass-base: #fff; }
+  .btn--primario { --glass-base: #304fae; }
+  .btn--wa { --glass-base: #25d07c; }
+  .btn--fantasma { --glass-base: #18243d; }
+}
+@media (forced-colors: active) {
+  .btn, .btn:hover { background: ButtonFace; color: ButtonText; border: 1px solid ButtonText; box-shadow: none; filter: none; backdrop-filter: none; }
+  .btn:focus-visible { outline-color: Highlight; }
+}

@@ -1,0 +1,177 @@
+# Actualizado con el itinerario aportado por la agencia el 13 de septiembre de 2026.
+orden: 8
+estado: publicado
+fuente:
+  documento: ITINERARIO TURQUIA.pdf
+  fecha_documento: null
+  version: Itinerario terminado aportado por la agencia el 13 de septiembre de 2026
+  notas: >-
+    Resumen público autorizado por la agencia. Itinerario completo, condiciones y calendario de pagos mediante
+    contacto directo.
+publico:
+  destino: Turquía
+  titular: Nos vamos a Turquía en abril
+  subtitulo: Capadocia, Konya, Pamukkale, Éfeso y Estambul
+  resumen: >
+    Nueve días cruzando Turquía en grupo y con acompañante desde Güímar: los valles y las chimeneas de hadas
+    de la Capadocia, el Museo de Mevlana en Konya, las terrazas blancas de Pamukkale, la ciudad antigua de
+    Éfeso y tres noches en Estambul, entre Europa y Asia.
+  fechas:
+    confirmado: true
+    etiqueta: 14–22 abr 2027
+    inicio: 2027-04-14T00:00:00.000Z
+    fin: 2027-04-22T00:00:00.000Z
+  duracion:
+    confirmado: true
+    etiqueta: 9 días / 8 noches
+  precio:
+    confirmado: true
+    valor: 2190
+    moneda: EUR
+    base: por persona en habitación doble
+  suplemento_individual:
+    confirmado: true
+    etiqueta: 450 €
+    valor: 450
+  salida:
+    confirmado: true
+    lugar: Tenerife Norte
+  regimen_resumen:
+    confirmado: true
+    etiqueta: Pensión completa
+  plazas:
+    mostrar: false
+    estado: null
+  destacados:
+    confirmado: true
+    items:
+      - Los valles y las chimeneas de hadas de la Capadocia
+      - Las terrazas blancas de Pamukkale y las ruinas de Hierápolis
+      - Éfeso, una de las ciudades mejor conservadas de la Antigüedad
+      - "Estambul: Santa Sofía, la Mezquita Azul, Topkapi y el Gran Bazar"
+      - Crucero por el Bósforo, entre Europa y Asia
+      - El Museo de Mevlana en Konya y la Bursa otomana
+      - "Opcional: vuelo en globo al amanecer sobre la Capadocia"
+  ruta_resumida:
+    confirmado: true
+    items:
+      - Capadocia
+      - Konya
+      - Pamukkale
+      - Éfeso
+      - Kuşadası
+      - Bursa
+      - Estambul
+  incluye:
+    confirmado: true
+    items:
+      - Vuelo Tenerife Norte – Madrid, ida y vuelta, con maleta facturada
+      - >-
+        Vuelo Madrid – Kayseri con escala (ida) y vuelo directo Estambul – Madrid (vuelta), con maleta
+        facturada
+      - Autocar con A/C durante todo el recorrido
+      - 8 noches en hoteles de 4★ y 5★
+      - Régimen de pensión completa
+      - Guías locales de habla hispana
+      - Todas las visitas indicadas en el itinerario
+      - Crucero por el Bósforo
+      - Acompañante de B Travel Güímar durante todo el viaje
+  no_incluye:
+    confirmado: true
+    items:
+      - Seguro de viaje y cancelación (opcional)
+      - Bebidas en las comidas
+      - Almuerzo del último día
+      - Suplemento de habitación individual
+      - Vuelo en globo sobre la Capadocia (opcional)
+      - Entradas no especificadas en el itinerario
+  itinerario_resumen:
+    confirmado: true
+    bloques:
+      - dias: Día 1
+        titulo: Vuelo a la Capadocia
+        texto: >-
+          Encuentro en el aeropuerto con el acompañante de B Travel Güímar. Vuelo Tenerife Norte – Madrid y
+          vuelo Madrid – Kayseri con escala en Estambul. Traslado al hotel en la Capadocia. Cena y
+          alojamiento.
+      - dias: Día 2
+        titulo: "Capadocia: valles y chimeneas de hadas"
+        texto: >-
+          El valle de Göreme y sus iglesias rupestres de los siglos X y XI, el pueblo troglodita de Uçhisar,
+          el valle de Derbent y los Üçgüzeller de Ürgüp. Almuerzo en restaurante y visita a talleres
+          artesanales.
+      - dias: Día 3
+        titulo: Capadocia y Konya
+        texto: >-
+          La ciudad subterránea de Özkonak y salida hacia Konya con almuerzo en ruta. Visita de un
+          caravanserai selyúcida y del Museo de Mevlana. Cena y alojamiento en Konya. Al amanecer, opción de
+          volar en globo sobre la Capadocia.
+      - dias: Día 4
+        titulo: Pamukkale
+        texto: >-
+          El "Castillo de Algodón", con sus piscinas naturales de aguas termales y cascadas petrificadas de
+          travertino, y las ruinas de la antigua Hierápolis.
+      - dias: Día 5
+        titulo: Éfeso y Kuşadası
+        texto: >-
+          El área arqueológica de Éfeso: el Odeón, el Templo de Adriano, la Biblioteca de Celso, el Ágora, la
+          calle de Mármol y el gran Teatro. La Casa de la Virgen María y un centro de producción de cuero.
+          Noche en Kuşadası.
+      - dias: Día 6
+        titulo: Bursa y Estambul
+        texto: >-
+          Bursa, primera capital del Imperio Otomano: la Mezquita Verde (Yeşil Camii), el Mercado de la Seda y
+          el Mausoleo Verde. Continuación hacia Estambul.
+      - dias: Día 7
+        titulo: Bósforo y Sultanahmet
+        texto: >-
+          El Bazar Egipcio o Mercado de las Especias, un crucero por el Bósforo y el barrio de Sultanahmet: el
+          Hipódromo, la Mezquita Azul y la basílica de Santa Sofía.
+      - dias: Día 8
+        titulo: Palacios, barrios y bazares
+        texto: >-
+          El Palacio de Topkapi, el distrito de Pera y Gálata, la plaza Taksim y la avenida İstiklal, la
+          Mezquita de Süleymaniye y tiempo libre en el Gran Bazar.
+      - dias: Día 9
+        titulo: Regreso a Tenerife
+        texto: >-
+          Traslado al aeropuerto de Estambul y vuelo a Madrid; recogida de equipaje y vuelo directo de Madrid
+          a Tenerife Norte.
+  galeria:
+    - archivo: viajes/turquia/turquia-01.jpg
+      alt: >-
+        Las cúpulas y los minaretes de la Mezquita Azul de Estambul recortados contra un cielo rosado al
+        atardecer
+      placeholder: Turquía — Mezquita Azul, Estambul
+    - archivo: viajes/turquia/turquia-02.jpg
+      alt: >-
+        Decenas de globos aerostáticos sobrevolando al amanecer los valles y las chimeneas de hadas de la
+        Capadocia
+      placeholder: Turquía — globos sobre la Capadocia
+    - archivo: viajes/turquia/turquia-03.jpg
+      alt: El perfil de Estambul desde el mar, con sus mezquitas y un ferry cruzando el Cuerno de Oro
+      placeholder: Turquía — Estambul desde el mar
+    - archivo: viajes/turquia/turquia-04.jpg
+      alt: La mezquita de Ortaköy y una bandera turca ondeando frente al puente del Bósforo, en Estambul
+      placeholder: Turquía — Ortaköy y el Bósforo
+    - archivo: viajes/turquia/turquia-05.jpg
+      alt: El minarete de una mezquita emergiendo del agua junto a un pueblo de casas de piedra, en Halfeti
+      placeholder: Turquía — minarete sobre el agua en Halfeti
+privado:
+  disponible: false
+  aviso: Solicita a la agencia el itinerario completo, las condiciones y el calendario de pagos.
+  itinerario: []
+  vuelos: []
+  hoteles: []
+  regimen_detalle: null
+  planes_pago:
+    confirmado: false
+    plazos: []
+  notas_operativas: null
+seo:
+  title: Viaje a Turquía desde Tenerife · abril 2027 | B Travel Güímar
+  description: >
+    Nueve días cruzando Turquía en grupo y con acompañante desde Güímar: los valles y las chimeneas de hadas
+    de la Capadocia, el Museo de Mevlana en Konya, las terrazas blancas de Pamukkale, la ciudad antigua de
+    Éfeso y tres noches en Estambul, entre Europa y Asia.
+  og_image: viajes/turquia/og-turquia.jpg

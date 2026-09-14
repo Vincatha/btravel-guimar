@@ -1,0 +1,138 @@
+# Actualizado con el itinerario aportado por la agencia el 13 de septiembre de 2026.
+orden: 6
+estado: publicado
+fuente:
+  documento: ITINERARIO JAPÓN.pdf
+  fecha_documento: null
+  version: Itinerario terminado aportado por la agencia el 13 de septiembre de 2026
+  notas: >-
+    Resumen público autorizado por la agencia. Itinerario completo, condiciones y calendario de pagos mediante
+    contacto directo.
+publico:
+  destino: Japón
+  titular: Nos vamos a Japón en mayo
+  subtitulo: De templos milenarios a luces de neón
+  resumen: >-
+    Trece días para descubrir Japón en grupo: Osaka, los templos de Kioto y Nara, el tren bala a Tokio y una
+    excursión a Hakone. Tradición, barrios de neón y arte digital, con acompañante desde Tenerife.
+  fechas:
+    confirmado: true
+    etiqueta: 9–21 may 2027
+    inicio: 2027-05-09T00:00:00.000Z
+    fin: 2027-05-21T00:00:00.000Z
+  duracion:
+    confirmado: true
+    etiqueta: 13 días / 12 noches
+  precio:
+    confirmado: true
+    valor: 3890
+    moneda: EUR
+    base: por persona en habitación doble
+  suplemento_individual:
+    confirmado: false
+    etiqueta: a consultar
+    valor: null
+  salida:
+    confirmado: true
+    lugar: Tenerife Norte
+  regimen_resumen:
+    confirmado: true
+    etiqueta: Media pensión (desayunos y almuerzos)
+  plazas:
+    mostrar: false
+    estado: null
+  destacados:
+    confirmado: true
+    items:
+      - Osaka, Kioto, Nara y Tokio en un solo viaje
+      - Tren bala Shinkansen entre Kioto y Tokio
+      - Excursión al Monte Fuji y paseo en barco por el lago Ashi
+      - Museo teamLab Planets
+  ruta_resumida:
+    confirmado: true
+    items:
+      - Osaka
+      - Kioto
+      - Nara
+      - Tokio
+      - Hakone · Monte Fuji
+  incluye:
+    confirmado: true
+    items:
+      - Vuelos desde Tenerife vía Madrid, con maleta facturada
+      - Autocar y guías locales de habla hispana durante el recorrido
+      - Hoteles de 4 estrellas en Osaka y Tokio y de 3 estrellas superior en Kioto
+      - "Media pensión: desayunos y almuerzos según programa"
+      - Tren bala Kioto–Tokio con envío de maletas
+      - >-
+        Visitas y entradas del programa: castillo de Osaka, Umeda Sky Building, templos de Kioto y Nara y
+        Tokyo Skytree
+      - Excursión a Hakone con paseo en barco por el lago Ashi
+      - teamLab Planets y paseo en barco por la bahía de Tokio
+      - Acompañante de B Travel Güímar desde Tenerife
+  no_incluye:
+    confirmado: true
+    items:
+      - Seguro opcional de viaje y cancelación
+      - Bebidas, cenas y almuerzo del día de salida de Tokio
+      - Entradas y servicios no especificados
+  itinerario_resumen:
+    confirmado: true
+    bloques:
+      - dias: 9–12 mayo
+        titulo: Osaka
+        texto: >-
+          Viaje desde Tenerife y llegada a Osaka. Castillo, Shinsekai, Dotonbori y vistas desde Umeda Sky
+          Building, con tiempo libre.
+      - dias: 13–15 mayo
+        titulo: Kioto y Nara
+        texto: >-
+          Templos de Kioto, Gion, bambú de Arashiyama y Pabellón Dorado. Excursión a Nara y los torii de
+          Fushimi Inari.
+      - dias: 16–17 mayo
+        titulo: Tren bala y Tokio
+        texto: Shinkansen a Tokio. Asakusa, Sensoji, Skytree, Meiji Jingu y los barrios de Shibuya y Shinjuku.
+      - dias: 18–19 mayo
+        titulo: Hakone y arte digital
+        texto: >-
+          Excursión a Hakone, lago Ashi y Owakudani; las vistas del Fuji dependen de la visibilidad. teamLab
+          Planets y almuerzo en barco por la bahía de Tokio.
+      - dias: 20–21 mayo
+        titulo: Tiempo libre y regreso
+        texto: Últimas horas libres en Tokio y vuelos de vuelta a Tenerife.
+  galeria:
+    - archivo: viajes/japon/japon-01.jpg
+      alt: La pagoda de Yasaka y el barrio de Higashiyama, en Kioto, al atardecer
+      placeholder: Japón — Kioto
+    - archivo: viajes/japon/japon-02.jpg
+      alt: Cerezos en flor iluminados de noche junto al río Meguro, Tokio
+      placeholder: Japón — cerezos
+    - archivo: viajes/japon/japon-03.jpg
+      alt: Sendero entre el bosque de bambú de Arashiyama, Kioto
+      placeholder: Japón — bambú
+    - archivo: viajes/japon/japon-04.jpg
+      alt: Calle con fachadas tradicionales en Tokio
+      placeholder: Japón — Tokio
+    - archivo: viajes/japon/japon-05.jpg
+      alt: El Monte Fuji en otoño con la pagoda de Chureito
+      placeholder: Japón — Fuji
+    - archivo: viajes/japon/japon-06.jpg
+      alt: Camino de toris rojos del santuario Fushimi Inari, Kioto
+      placeholder: Japón — Fushimi Inari
+privado:
+  disponible: false
+  aviso: Solicita a la agencia el itinerario completo, las condiciones y el calendario de pagos.
+  itinerario: []
+  vuelos: []
+  hoteles: []
+  regimen_detalle: null
+  planes_pago:
+    confirmado: false
+    plazos: []
+  notas_operativas: null
+seo:
+  title: Viaje a Japón desde Tenerife · mayo 2027 | B Travel Güímar
+  description: >-
+    Trece días para descubrir Japón en grupo: Osaka, los templos de Kioto y Nara, el tren bala a Tokio y una
+    excursión a Hakone. Tradición, barrios de neón y arte digital, con acompañante desde Tenerife.
+  og_image: viajes/japon/og-japon.jpg

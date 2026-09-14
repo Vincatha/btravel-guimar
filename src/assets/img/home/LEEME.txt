@@ -1,0 +1,10 @@
+Fotos de la home. Coloca los archivos reales aquí, con estos nombres exactos:
+
+  hero.jpg            fondo del hero, a sangre (apaisada, >=2000 px)
+  equipo-oficina.jpg  equipo o interior de la oficina (4:3)
+  og-home.jpg         imagen para redes (1200x630)
+  porque/porque-01..04.jpg   seccion "Por que confian en nosotros" (4:3)
+  equipo/propietarios.jpg     foto del equipo (1:1, con autorizacion)
+
+Mientras no existan, la web muestra un marcador de posicion identificado.
+Detalle completo y pesos maximos: docs/IMAGENES.md

@@ -1,0 +1,313 @@
+---
+layout: layouts/base.njk
+title: "Viajes desde Tenerife, contados de tú a tú | B Travel Güímar"
+descripcion: "Agencia de viajes en Güímar. Elegimos contigo el destino, te lo organizamos hasta el último detalle y te acompañamos por el camino."
+ogImagen: "home/og-home.jpg"
+---
+{% import "macros/iconos.njk" as ic %}
+{% import "macros/ui.njk" as ui %}
+{%- set H = site.home -%}
+
+<!-- 02 · HERO (composición a sangre + panel flotante de cristal) -->
+<section class="hero-lg">
+  {# Fondo: foto real a sangre cuando exista; si no, degradado de marca + orbes. #}
+  <div class="hero-lg__fondo" aria-hidden="true">
+    {% foto H.hero.foto, { w: 1600, h: 1000, prioridad: true } %}
+    <span class="hero-lg__orbe hero-lg__orbe--1"></span>
+    <span class="hero-lg__orbe hero-lg__orbe--2"></span>
+    <span class="hero-lg__orbe hero-lg__orbe--3"></span>
+  </div>
+  <div class="hero-lg__velo" aria-hidden="true"></div>
+
+  <div class="hero-lg__inner contenedor">
+    <div class="hero-lg__texto">
+      <p class="hero-lg__kicker">{{ H.hero.kicker }}</p>
+      <h1>{{ H.hero.eslogan }}</h1>
+      <p class="hero-lg__lede">{{ H.hero.subtitulo }}</p>
+      {%- if H.hero.chips and H.hero.chips|length %}
+      <ul class="hero-lg__chips">
+        {%- for c in H.hero.chips %}<li>{{ c }}</li>{% endfor %}
+      </ul>
+      {%- endif %}
+      <div class="hero-lg__ctas">
+        <a class="btn btn--claro" href="#salidas">{{ H.hero.cta_primario }} {{ ic.flecha() }}</a>
+        {{ ui.botonWa(site.whatsapp_mensajes.hero, site, H.hero.cta_secundario, "btn btn--fantasma") }}
+      </div>
+    </div>
+
+    <div class="hero-lg__lado">
+      <div class="panel-flota">
+        <div class="panel-flota__cab">
+          <h2>Próximas salidas de grupo</h2>
+          <a href="#salidas">Ver todas</a>
+        </div>
+        {%- for v in (viajes | limit(3)) %}
+        {%- set p = v.publico %}
+        <a class="mini-viaje" href="/viaje-{{ v.slug }}.html">
+          <span class="mini-viaje__media">{% foto p.galeria[0], { w: 176, h: 144 } %}</span>
+          <span class="mini-viaje__info">
+            <span class="mini-viaje__destino">{{ p.destino }}</span>
+            <span class="mini-viaje__ruta">{{ p.subtitulo or (p.ruta_resumida.items | join(" · ")) }}</span>
+            <span class="mini-viaje__meta">
+              {%- if p.fechas and p.fechas.etiqueta %}
+              <span class="mini-viaje__chip mini-viaje__chip--fecha">{{ ic.calendario() }} {{ p.fechas.etiqueta }}</span>
+              {%- endif %}
+              {%- if p.duracion and p.duracion.etiqueta %}
+              <span class="mini-viaje__chip">{{ ic.reloj() }} {{ p.duracion.etiqueta }}</span>
+              {%- elif not (p.fechas and p.fechas.etiqueta) %}
+              <span class="mini-viaje__chip mini-viaje__chip--pend">Fechas por confirmar</span>
+              {%- endif %}
+            </span>
+          </span>
+        </a>
+        {%- endfor %}
+      </div>
+
+      <div class="hero-lg__datos">
+        <div class="hero-dato">
+          <span class="hero-dato__et">Plan de pago</span>
+          <span class="hero-dato__gr">A plazos</span>
+          <span class="hero-dato__pq">Reserva y mensualidades hasta la fecha de salida.</span>
+        </div>
+        <div class="hero-dato">
+          <span class="hero-dato__et">Te acompañamos</span>
+          <span class="hero-dato__gr">Todo el viaje</span>
+          <span class="hero-dato__pq">Alguien de la agencia va con el grupo desde Tenerife.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {%- if H.hero.senales and H.hero.senales|length %}
+  <div class="hero-lg__barra">
+    <div class="contenedor hero-lg__barra-in">
+      <ul class="hero-lg__senales">
+        {%- for s in H.hero.senales %}
+        <li>
+          {{ ic.check() }}
+          <span><strong>{{ s.fuerte }}</strong>{{ s.suave }}</span>
+        </li>
+        {%- endfor %}
+      </ul>
+      <p class="hero-lg__claim">{{ H.hero.claim }}</p>
+    </div>
+  </div>
+  {%- endif %}
+</section>
+
+<!-- 03 · PRÓXIMAS SALIDAS -->
+<section class="seccion" id="salidas">
+  <div class="contenedor">
+    <div class="seccion__intro">
+      <h2>Todas las salidas de grupo</h2>
+      <p>Descubre las fechas, los precios y el recorrido de cada viaje, siempre con
+         acompañante de la agencia. Para recibir el itinerario completo y el plan de pagos, contacta con nosotros.</p>
+    </div>
+    <div class="rejilla-viajes">
+      {%- for v in viajes %}{{ ui.tarjetaViaje(v, site) }}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- 04 · CÓMO TRABAJAMOS -->
+<section class="seccion seccion--hueso" id="como-trabajamos">
+  <div class="como-fondo" data-liquid-glass-background aria-hidden="true"></div>
+  <div class="contenedor">
+    <div class="seccion__intro">
+      <h2>{{ H.como_trabajamos.titulo }}</h2>
+      <p>{{ H.como_trabajamos.intro }}</p>
+    </div>
+    <div class="pasos-cristal">
+    <ol class="pasos">
+      {%- for p in H.como_trabajamos.pasos %}
+      <li class="paso">
+        <div data-glass-pasos aria-hidden="true"></div>
+        <span class="paso__n">{{ p.n }}</span>
+        <h3>{{ p.titulo }}</h3>
+        <p>{{ p.texto }}</p>
+      </li>
+      {%- endfor %}
+    </ol>
+    </div>
+  </div>
+</section>
+
+<!-- 05 · POR QUÉ CON NOSOTROS -->
+<section class="seccion" id="por-que">
+  <div class="contenedor">
+    <div class="seccion__intro">
+      <h2>{{ H.porque.titulo }}</h2>
+      <p>{{ H.porque.entradilla }}</p>
+    </div>
+
+    <div class="editorial">
+      {%- for t in H.porque.tarjetas %}
+      <article class="editorial__card">
+        <div class="editorial__media">{% foto t.foto, { w: 900, h: 675 } %}</div>
+        <div class="editorial__cuerpo">
+          <h3>{{ t.titulo }}</h3>
+          <p>{{ t.texto }}</p>
+        </div>
+      </article>
+      {%- endfor %}
+    </div>
+
+    {%- if H.porque.datos.confirmado and H.porque.datos.items|length %}
+    <div class="cifras">
+      {%- for d in H.porque.datos.items %}
+      <div class="cifra"><strong>{{ d.cifra }}</strong><span>{{ d.texto }}</span></div>
+      {%- endfor %}
+    </div>
+    {%- endif %}
+  </div>
+</section>
+
+<!-- 06 · RESEÑAS DE GOOGLE -->
+{%- if resenas.modo != "pendiente" and resenas.items|length %}
+<section class="seccion seccion--hueso" id="resenas">
+  <div class="contenedor">
+    <div class="seccion__intro">
+      <h2>{{ resenas.titulo }}</h2>
+      <p class="resenas__fuente">
+        {{ ic.check() }} Reseñas reales de Google. Puedes comprobarlas tú mismo.
+      </p>
+    </div>
+
+    {%- if resenas.modo != "pendiente" and resenas.items|length %}
+    {%- if resenas.nota_media and resenas.total %}
+    <p class="resenas__nota"><strong>{{ resenas.nota_media }}</strong> sobre 5 · {{ resenas.total }} reseñas en Google</p>
+    {%- endif %}
+    <div class="resenas__carrusel">
+      {%- for r in resenas.items %}
+      <blockquote class="resena">
+        <div class="resena__estrellas" aria-label="{{ r.estrellas }} de 5 estrellas">
+          {%- for i in range(0, r.estrellas) %}&#9733;{% endfor %}
+        </div>
+        <p>{{ r.texto }}</p>
+        <footer>{{ r.autor }}{% if r.fecha %} · {{ r.fecha }}{% endif %}</footer>
+      </blockquote>
+      {%- endfor %}
+    </div>
+    {%- else %}
+    <div class="pendiente-box">
+      <p><strong>&#10216;RESEÑAS GOOGLE — PENDIENTE DE CONFIGURACIÓN&#10217;</strong></p>
+      <p>Aquí se mostrarán las reseñas reales de Google de B Travel Güímar, con su
+         puntuación y un enlace para verificarlas. No usamos testimonios inventados.</p>
+    </div>
+    {%- endif %}
+
+    {%- if resenas.place_url %}
+    <p style="margin-top:var(--e3)">
+      <a class="btn btn--secundario" href="{{ resenas.place_url }}" target="_blank" rel="noopener">
+        Leer todas las reseñas en Google {{ ic.flecha() }}
+      </a>
+    </p>
+    {%- endif %}
+  </div>
+</section>
+
+<!-- 07 · QUIÉNES SOMOS + EL EQUIPO -->
+{%- endif %}
+<section class="seccion" id="nosotros">
+  <div class="contenedor">
+    <div class="nosotros">
+      <div class="nosotros__fotos-equipo" role="group" aria-label="El equipo de B Travel Güímar">
+        {% foto { archivo: "home/equipo/equipo-01.jpg", alt: "Una integrante del equipo de B Travel Güímar en su mesa de atención" }, { w: 886, h: 886 } %}
+        {% foto { archivo: "home/equipo/equipo-02.jpg", alt: "Un integrante del equipo de B Travel Güímar trabajando en la oficina" }, { w: 886, h: 886 } %}
+      </div>
+      <div class="nosotros__texto">
+        <h2>Una oficina de B travel en la Avda. Santa Cruz</h2>
+        <p>Somos la oficina de B travel en Güímar. Organizamos viajes para gente de la
+           comarca: elegimos contigo el destino, nos ocupamos de todo y, cuando el viaje
+           lo lleva, vamos contigo. Si prefieres hablar en persona, nos tienes en la
+           Avda. Santa Cruz, 6.</p>
+        <ul class="contacto__lista" style="margin-top:var(--e3)">
+          <li>{{ ic.sitio() }} <span>{{ site.direccion.calle }}, {{ site.direccion.cp }} {{ site.direccion.localidad }}</span></li>
+          <li>{{ ic.reloj() }} <span>{{ site.horario.texto }}{% if site.horario.sabados %}<br><small>{{ site.horario.sabados }}</small>{% endif %}</span></li>
+        </ul>
+      </div>
+    </div>
+
+    {#- EL EQUIPO / LOS PROPIETARIOS
+        Se muestra SOLO cuando site.equipo.confirmado sea true (es decir, cuando
+        haya fotos reales y datos de las personas). Mientras tanto no se pinta
+        nada: la sección "Quiénes somos" se queda con el bloque de la oficina. -#}
+    {%- if site.equipo.confirmado %}
+    <div class="equipo">
+      <h3 class="equipo__titulo">{{ site.equipo.titulo }}</h3>
+      <p class="equipo__intro">{{ site.equipo.intro_fija }}</p>
+
+      <div class="equipo__personas">
+        {%- for p in site.equipo.personas %}
+        <article class="persona">
+          <div class="persona__foto">{% foto p.foto, { w: 640, h: 640 } %}</div>
+          <div class="persona__datos">
+            <h4>{{ p.nombre }}</h4>
+            <p class="persona__funcion">{{ p.funcion }}</p>
+            <p>{{ p.descripcion }}</p>
+          </div>
+        </article>
+        {%- endfor %}
+      </div>
+
+      {%- if site.equipo.sobre_acompanamiento %}
+      <p class="equipo__acompanamiento">{{ site.equipo.sobre_acompanamiento }}</p>
+      {%- endif %}
+    </div>
+    {%- endif %}
+  </div>
+</section>
+
+<!-- 08 · FAQ -->
+<section class="seccion seccion--hueso" id="faq">
+  <div class="contenedor">
+    <div class="seccion__intro"><h2>Lo que más nos preguntáis antes de reservar</h2></div>
+    <div class="faq">
+      {%- for item in faq %}
+      <div class="faq__item">
+        <button class="faq__pregunta" type="button" aria-expanded="false" aria-controls="faq-{{ loop.index }}">
+          <span>{{ item.pregunta }}</span> {{ ic.mas() }}
+        </button>
+        <div class="faq__respuesta" id="faq-{{ loop.index }}" hidden>{{ item.respuesta }}</div>
+      </div>
+      {%- endfor %}
+    </div>
+    <p style="margin-top:var(--e3)">{{ ui.botonWa(site.whatsapp_mensajes.faq, site, "Pregúntanos lo que sea") }}</p>
+  </div>
+</section>
+
+<!-- 09 · CONTACTO -->
+<section class="seccion" id="contacto">
+  <div class="contenedor">
+    <div class="seccion__intro"><h2>Escríbenos y te lo contamos con calma</h2></div>
+    <div class="contacto">
+      <ul class="contacto__lista">
+        <li>{{ ic.sitio() }} <span>{{ site.direccion.calle }}<br>{{ site.direccion.cp }} {{ site.direccion.localidad }}, {{ site.direccion.provincia }}</span></li>
+        <li>{{ ic.reloj() }} <span>{{ site.horario.texto }}{% if site.horario.sabados %}<br><small>{{ site.horario.sabados }}</small>{% endif %}</span></li>
+        <li>{{ ic.telefono() }} <span><a href="tel:{{ site.telefonos.fijo_tel }}">{{ site.telefonos.fijo }}</a> · <a href="tel:{{ site.telefonos.movil_tel }}">{{ site.telefonos.movil }}</a></span></li>
+        <li>{{ ic.correo() }} <span><a href="mailto:{{ site.email }}?subject=Consulta%20de%20viaje">{{ site.email }}</a></span></li>
+        <li>{{ ic.whatsapp() }} <span><a href="{{ ui.waHref(site.whatsapp_mensajes.contacto, site) }}" target="_blank" rel="noopener">Escríbenos por WhatsApp</a></span></li>
+      </ul>
+      <div>
+        {%- if site.geo.confirmado and site.geo.lat %}
+        <div class="mapa-embed" id="mapa-oficina"
+             data-lat="{{ site.geo.lat }}" data-lng="{{ site.geo.lng }}"
+             data-label="{{ site.nombre }} — {{ site.direccion.calle }}"
+             role="img" aria-label="Mapa de la oficina de {{ site.nombre }}, en la {{ site.direccion.calle }}, {{ site.direccion.localidad }}">
+        </div>
+        <p class="mapa-links">
+          <a href="https://www.google.com/maps/dir/?api=1&destination={{ site.geo.lat }},{{ site.geo.lng }}" target="_blank" rel="noopener">
+            {{ ic.sitio() }} Cómo llegar
+          </a>
+          <a href="https://www.openstreetmap.org/?mlat={{ site.geo.lat }}&mlon={{ site.geo.lng }}#map=17/{{ site.geo.lat }}/{{ site.geo.lng }}" target="_blank" rel="noopener">Ver en OpenStreetMap</a>
+        </p>
+        {%- else %}
+        <div class="mapa-embed" role="img" aria-label="Mapa de la oficina (pendiente)"
+             style="display:flex;align-items:center;justify-content:center;color:var(--gris-txt);text-align:center;padding:var(--e3)">
+          Mapa pendiente de confirmar la ubicación exacta de la oficina
+        </div>
+        {%- endif %}
+      </div>
+    </div>
+  </div>
+</section>

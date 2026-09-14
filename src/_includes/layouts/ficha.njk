@@ -1,0 +1,154 @@
+---
+layout: layouts/base.njk
+---
+{% import "macros/iconos.njk" as ic %}
+{% import "macros/ui.njk" as ui %}
+
+{%- set pub = viaje.publico -%}
+{%- set msgReserva = "Hola, quiero reservar plaza para el viaje a " + pub.destino + "." -%}
+{%- set msgInfo = "Hola, me interesa el viaje a " + pub.destino + ". ¿Me podéis dar más información?" -%}
+
+<article>
+
+  <!-- HERO -->
+  <section class="ficha-hero">
+    <div class="contenedor ficha-hero__cuerpo">
+      <p class="pildora pildora--neutra">Viaje de grupo · Salida desde Tenerife</p>
+      <h1>{{ pub.titular or ("Viaje a " + pub.destino) }}</h1>
+      {%- if pub.subtitulo %}<p class="hero__sub">{{ pub.subtitulo }}</p>{% endif %}
+      <div style="margin-top:var(--e3)">{{ ui.pildorasDatos(viaje, site) }}</div>
+      {% if pub.precio.confirmado and pub.precio.valor %}
+      <p style="margin-top:var(--e3);font-size:1.25rem"><strong>{{ pub.precio.valor }} €</strong> {{ pub.precio.base }}.</p>
+      <p style="margin-top:var(--e1);color:var(--gris-txt)">{% if pub.suplemento_individual.confirmado %}Suplemento individual: {{ pub.suplemento_individual.etiqueta }}. {% else %}Suplemento individual a consultar. {% endif %}Consulta disponibilidad y confirma el precio al reservar.</p>
+      {% endif %}
+      <div class="hero__ctas">
+        {%- if viaje.esPublicado %}
+        {{ ui.botonWa(msgReserva, site, "Te reservamos plaza") }}
+        {%- else %}
+        {{ ui.botonWa(msgInfo, site, "Preguntar por este viaje") }}
+        {%- endif %}
+      </div>
+    </div>
+  </section>
+
+  {%- if viaje.enPreparacion %}
+  <!-- ESTADO: EN PREPARACIÓN -->
+  <section class="ficha-seccion">
+    <div class="contenedor">
+      {{ ui.avisoPendiente(viaje, site) }}
+      {# Comentario para el equipo: {{ viaje.fuente.notas | trim }} #}
+    </div>
+  </section>
+  {%- endif %}
+
+  <!-- RESUMEN + DESTACADOS -->
+  <section class="ficha-seccion">
+    <div class="contenedor">
+      {%- if pub.resumen %}<p style="font-size:1.15rem">{{ pub.resumen }}</p>{% endif %}
+      {%- if pub.destacados and pub.destacados.confirmado and pub.destacados.items|length %}
+      <ul style="margin-top:var(--e3);display:grid;gap:var(--e1);list-style:none;padding:0">
+        {%- for d in pub.destacados.items %}
+        <li style="display:flex;gap:var(--e1)"><span style="color:var(--verde);flex:none;width:20px">{{ ic.check() }}</span>{{ d }}</li>
+        {%- endfor %}
+      </ul>
+      {%- endif %}
+      {%- if pub.ruta_resumida and pub.ruta_resumida.confirmado and pub.ruta_resumida.items|length %}
+      <p style="margin-top:var(--e3);color:var(--gris-txt)"><strong>Ruta:</strong> {{ pub.ruta_resumida.items | join(" · ") }}</p>
+      {%- endif %}
+    </div>
+  </section>
+
+  <!-- ITINERARIO PÚBLICO RESUMIDO -->
+  <section class="ficha-seccion seccion--hueso">
+    <div class="contenedor">
+      <h2>El viaje, a grandes rasgos</h2>
+      {%- if pub.itinerario_resumen and pub.itinerario_resumen.confirmado and pub.itinerario_resumen.bloques|length %}
+      <div class="itinerario-resumen" style="margin-top:var(--e3)">
+        {%- for b in pub.itinerario_resumen.bloques %}
+        <div class="itinerario-resumen__bloque">
+          <span class="itinerario-resumen__dias">{{ b.dias }}</span>
+          <span class="itinerario-resumen__titulo">{{ b.titulo }}</span>
+          <span class="itinerario-resumen__texto">{{ b.texto }}</span>
+        </div>
+        {%- endfor %}
+      </div>
+      {%- else %}
+      <p style="margin-top:var(--e2);color:var(--gris-txt)">
+        Estamos preparando el resumen del itinerario de este viaje.
+        {{ ui.botonWa(msgInfo, site, "Pídenos el recorrido") }}
+      </p>
+      {%- endif %}
+    </div>
+  </section>
+
+  <!-- INCLUYE / NO INCLUYE -->
+  {%- if (pub.incluye and pub.incluye.confirmado and pub.incluye.items|length) or (pub.no_incluye and pub.no_incluye.confirmado and pub.no_incluye.items|length) %}
+  <section class="ficha-seccion">
+    <div class="contenedor">
+      <h2>Qué incluye y qué no</h2>
+      <div class="incluye" style="margin-top:var(--e3)">
+        <div class="incluye__col incluye__col--si">
+          <h3>Incluye</h3>
+          <ul>
+            {%- for i in pub.incluye.items %}<li>{{ ic.check() }} <span>{{ i }}</span></li>{% endfor %}
+          </ul>
+        </div>
+        <div class="incluye__col incluye__col--no">
+          <h3>No incluye</h3>
+          <ul>
+            {%- for i in pub.no_incluye.items %}<li>{{ ic.cruz() }} <span>{{ i }}</span></li>{% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  {%- endif %}
+
+  <!-- GALERÍA -->
+  {%- if pub.galeria and pub.galeria|length %}
+  <section class="ficha-seccion seccion--hueso">
+    <div class="contenedor">
+      <h2>{{ pub.destino }} en imágenes</h2>
+      <div class="galeria" style="margin-top:var(--e3)">
+        {%- for img in pub.galeria %}{% foto img, { w: 800, h: 600 } %}{% endfor %}
+      </div>
+    </div>
+  </section>
+  {%- endif %}
+
+  <!-- ITINERARIO COMPLETO (PRIVADO) -->
+  <section class="ficha-seccion">
+    <div class="contenedor">
+      <div class="candado-cta">
+        <h3>{{ ic.candado() }} Tu itinerario completo, con la agencia</h3>
+        <p>Este es un resumen del recorrido. Contacta con B Travel Güímar para recibir
+           el itinerario completo, los detalles de vuelos y hoteles, las condiciones
+           de reserva y el calendario de pagos.</p>
+        {{ ui.botonWa("Hola, me interesa el viaje a " + pub.destino + ". ¿Me podéis enviar el itinerario completo y la información de pagos y reserva?", site, "Solicitar itinerario y pagos", "btn btn--secundario") }}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="ficha-seccion seccion--hueso">
+    <div class="contenedor" style="text-align:center">
+      <h2>¿Te lo pensamos juntos?</h2>
+      <p style="margin:var(--e2) auto 0">Escríbenos y te contamos este viaje con calma, sin compromiso.</p>
+      <div style="display:flex;gap:var(--e2);justify-content:center;flex-wrap:wrap;margin-top:var(--e3)">
+        {{ ui.botonWa(msgInfo, site, "Preguntar por WhatsApp") }}
+        <a class="btn btn--secundario" href="tel:{{ site.telefonos.movil_tel }}">Llamar a la oficina</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- OTROS VIAJES -->
+  <section class="ficha-seccion">
+    <div class="contenedor">
+      <h2>Otros viajes de grupo</h2>
+      <div class="rejilla-viajes" style="margin-top:var(--e3)">
+        {%- for v in (viajes | rejectattr("slug", "equalto", viaje.slug) | limit(3)) %}{{ ui.tarjetaViaje(v, site) }}{% endfor %}
+      </div>
+    </div>
+  </section>
+
+</article>

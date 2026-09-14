@@ -1,0 +1,134 @@
+# Actualizado con el itinerario aportado por la agencia el 13 de septiembre de 2026.
+orden: 2
+estado: publicado
+fuente:
+  documento: ITINERARIO SRI LANKA TURQUÍA.pdf
+  fecha_documento: null
+  version: Itinerario terminado aportado por la agencia el 13 de septiembre de 2026
+  notas: >-
+    Resumen público autorizado por la agencia. Itinerario completo, condiciones y calendario de pagos mediante
+    contacto directo.
+publico:
+  destino: Sri Lanka & Turquía
+  titular: Del Índico al Bósforo, en grupo
+  subtitulo: Safaris, templos y plantaciones de té, con dos noches en Estambul
+  resumen: >-
+    Un viaje de trece días desde Tenerife que combina los safaris de Minneriya y Yala, Sigiriya, los templos y
+    las plantaciones de té de Sri Lanka con dos noches en Estambul y un paseo por el Bósforo.
+  fechas:
+    confirmado: true
+    etiqueta: 21 feb – 5 mar 2027
+    inicio: 2027-02-21T00:00:00.000Z
+    fin: 2027-03-05T00:00:00.000Z
+  duracion:
+    confirmado: true
+    etiqueta: 13 días / 12 noches
+  precio:
+    confirmado: true
+    valor: 2980
+    moneda: EUR
+    base: por persona en habitación doble
+  suplemento_individual:
+    confirmado: true
+    etiqueta: 550 €
+    valor: 550
+  salida:
+    confirmado: true
+    lugar: Tenerife Norte
+  regimen_resumen:
+    confirmado: true
+    etiqueta: Media pensión en Sri Lanka; otros tramos según programa
+  plazas:
+    mostrar: false
+    estado: null
+  destacados:
+    confirmado: true
+    items:
+      - Safaris en Minneriya y Yala
+      - Sigiriya, la Roca del León
+      - "El país del té: Kandy, Nuwara Eliya, Ella"
+      - Estambul con guía oficial y paseo por el Bósforo
+  ruta_resumida:
+    confirmado: true
+    items:
+      - Colombo
+      - Sigiriya
+      - Kandy
+      - Ella
+      - Yala
+      - Galle
+      - Estambul
+  incluye:
+    confirmado: true
+    items:
+      - Vuelos Tenerife–Madrid–Colombo–Estambul–Madrid–Tenerife, con maleta facturada
+      - 1 noche en Madrid en hotel de 4 estrellas y media pensión
+      - 8 noches en Sri Lanka en hoteles de 4 estrellas y media pensión
+      - 2 noches en Estambul con desayuno, más 1 cena y 1 almuerzo
+      - Autocar y guías locales de habla hispana en Sri Lanka; guía oficial en Estambul
+      - Safaris en Minneriya y Yala, Sigiriya, Dambulla y Templo del Diente
+      - Visitas del programa y paseo en barco por el Bósforo y el Cuerno de Oro
+      - Visados y tasas turísticas incluidos en el programa
+      - Acompañante de B Travel Güímar durante todo el viaje
+  no_incluye:
+    confirmado: true
+    items:
+      - Seguro opcional de viaje y cancelación
+      - Bebidas y comidas no especificadas
+      - Entradas y servicios no incluidos en el programa
+  itinerario_resumen:
+    confirmado: true
+    bloques:
+      - dias: 21–23 febrero
+        titulo: De Tenerife a Colombo
+        texto: Noche en Madrid, vuelo a Sri Lanka y primera visita de Colombo.
+      - dias: 24–25 febrero
+        titulo: Minneriya y Sigiriya
+        texto: >-
+          Kurunegala, safari en Minneriya, ciudad antigua de Polonnaruwa y ascenso a la Roca del León de
+          Sigiriya.
+      - dias: 26–27 febrero
+        titulo: Kandy y el país del té
+        texto: >-
+          Cuevas de Dambulla, jardín de especias, paseo en tuk tuk por Kandy, Templo del Diente y plantación
+          de té en Nuwara Eliya.
+      - dias: 28 febrero–2 marzo
+        titulo: Yala, Galle y Negombo
+        texto: >-
+          Puente de los Nueve Arcos en Ella, cascadas de Rawana y safari en Yala. Visita de Galle y descanso
+          en Negombo.
+      - dias: 3–5 marzo
+        titulo: Estambul y regreso
+        texto: >-
+          Vuelo a Estambul, tiempo libre y jornada con guía por sus monumentos, con paseo por el Bósforo y el
+          Cuerno de Oro. Regreso a Tenerife vía Madrid.
+  galeria:
+    - archivo: viajes/sri-lanka-turquia/sri-lanka-turquia-01.jpg
+      alt: Vista aérea de la roca de Sigiriya, con las ruinas del palacio en la cima
+      placeholder: Sri Lanka — Sigiriya
+    - archivo: viajes/sri-lanka-turquia/sri-lanka-turquia-02.jpg
+      alt: Tren azul cruzando el puente de los Nueve Arcos, en Ella
+      placeholder: Sri Lanka — Ella
+    - archivo: viajes/sri-lanka-turquia/sri-lanka-turquia-03.jpg
+      alt: Manada de elefantes junto a un río en Sri Lanka
+      placeholder: Sri Lanka — elefantes
+    - archivo: viajes/sri-lanka-turquia/sri-lanka-turquia-05.jpg
+      alt: La Mezquita Azul de Estambul al anochecer
+      placeholder: Turquía — Estambul
+privado:
+  disponible: false
+  aviso: Solicita a la agencia el itinerario completo, las condiciones y el calendario de pagos.
+  itinerario: []
+  vuelos: []
+  hoteles: []
+  regimen_detalle: null
+  planes_pago:
+    confirmado: false
+    plazos: []
+  notas_operativas: null
+seo:
+  title: Viaje a Sri Lanka y Turquía desde Tenerife · febrero 2027 | B Travel Güímar
+  description: >-
+    Un viaje de trece días desde Tenerife que combina los safaris de Minneriya y Yala, Sigiriya, los templos y
+    las plantaciones de té de Sri Lanka con dos noches en Estambul y un paseo por el Bósforo.
+  og_image: viajes/sri-lanka-turquia/og-sri-lanka-turquia.jpg

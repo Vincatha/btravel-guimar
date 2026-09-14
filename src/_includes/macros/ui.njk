@@ -1,0 +1,98 @@
+{% import "macros/iconos.njk" as ic %}
+
+{# ── Enlace de WhatsApp con mensaje contextual ───────────────────────────── #}
+{% macro waHref(mensaje, site) -%}
+https://wa.me/{{ site.whatsapp.numero }}?text={{ mensaje | waText }}
+{%- endmacro %}
+
+{% macro botonWa(mensaje, site, texto="Preguntar por WhatsApp", clase="btn btn--wa") -%}
+<a class="{{ clase }}" href="{{ waHref(mensaje, site) }}" target="_blank" rel="noopener">
+  {{ ic.whatsapp() }} <span>{{ texto }}</span>
+</a>
+{%- endmacro %}
+
+{# ── Valor de un dato: muestra el valor si está confirmado, si no "Consultar" ─ #}
+{% macro dato(campo, site, mensajeWa, textoVacio="Consultar") -%}
+{%- if campo and campo.confirmado and (campo.etiqueta or campo.valor) -%}
+  {{ campo.etiqueta if campo.etiqueta else campo.valor }}
+{%- else -%}
+  <a class="dato-pendiente" href="{{ waHref(mensajeWa, site) }}" target="_blank" rel="noopener">{{ textoVacio }}</a>
+{%- endif -%}
+{%- endmacro %}
+
+{# ── Caja de precio (chip de cristal sobre la foto) ────────────────────────── #}
+{% macro cajaPrecio(viaje, site) -%}
+{%- set p = viaje.publico.precio -%}
+{%- set msg = "Hola, ¿me podéis dar el precio del viaje a " + viaje.publico.destino + "?" -%}
+{%- if p and p.confirmado and p.valor -%}
+<div class="tarjeta__precio">
+  <span class="tarjeta__precio-main">desde <strong>{{ p.valor }} €</strong></span>
+  <span class="tarjeta__precio-sub">{{ p.base }}</span>
+</div>
+{%- else -%}
+<a class="tarjeta__precio tarjeta__precio--consultar" href="{{ waHref(msg, site) }}" target="_blank" rel="noopener">
+  <span class="tarjeta__precio-main"><strong>Consultar precio</strong></span>
+  <span class="tarjeta__precio-sub">{{ ic.whatsapp() }} por WhatsApp</span>
+</a>
+{%- endif -%}
+{%- endmacro %}
+
+{# ── Tarjeta de viaje (home y venta cruzada) ────────────────────────────── #}
+{% macro tarjetaViaje(viaje, site) -%}
+{%- set pub = viaje.publico -%}
+<article class="tarjeta">
+  <div class="tarjeta__media">
+    {% foto pub.galeria[0], { w: 800, h: 600, clase: "" } %}
+    {%- if pub.fechas and pub.fechas.confirmado and pub.fechas.etiqueta %}
+    <span class="pildora pildora--dato tarjeta__fecha">{{ ic.calendario() }} {{ pub.fechas.etiqueta }}</span>
+    {%- endif %}
+    {{ cajaPrecio(viaje, site) }}
+  </div>
+  <div class="tarjeta__cuerpo">
+    <h3 class="tarjeta__destino">{{ pub.destino }}</h3>
+    {%- if pub.ruta_resumida and pub.ruta_resumida.confirmado and pub.ruta_resumida.items|length %}
+    <p class="tarjeta__ruta">{{ pub.ruta_resumida.items | join(" · ") }}</p>
+    {%- endif %}
+    <div class="tarjeta__meta">
+      {%- if pub.fechas and pub.fechas.etiqueta %}
+      <span>{{ ic.calendario() }} {{ pub.fechas.etiqueta }}</span>
+      {%- endif %}
+      <span>{{ ic.reloj() }} {% if pub.duracion and pub.duracion.etiqueta %}{{ pub.duracion.etiqueta }}{% else %}{{ dato(pub.duracion, site, "Hola, ¿cuántos días dura el viaje a " + pub.destino + "?") }}{% endif %}</span>
+      <span>{{ ic.avion() }} {% if pub.salida and pub.salida.confirmado %}Salida {{ pub.salida.lugar }}{% else %}Salida desde Tenerife{% endif %}</span>
+    </div>
+    <div class="tarjeta__acciones">
+      {# La consulta por WhatsApp ya vive en el chip de precio sobre la foto;
+         aquí solo la acción principal, para no repetir. #}
+      <a class="btn btn--primario btn--bloque" href="/viaje-{{ viaje.slug }}.html">Ver el viaje</a>
+    </div>
+  </div>
+</article>
+{%- endmacro %}
+
+{# ── Banner de estado "en preparación" ─────────────────────────────────── #}
+{% macro avisoPendiente(viaje, site) -%}
+{%- set msg = "Hola, me interesa el viaje a " + viaje.publico.destino + ". ¿Me avisáis cuando esté cerrado el programa?" -%}
+<div class="aviso-pendiente">
+  <h3>Estamos cerrando este viaje</h3>
+  <p>Todavía estamos confirmando con la central el programa definitivo de este viaje
+     (fechas, precio e itinerario). En cuanto esté cerrado lo publicamos aquí. Mientras
+     tanto, escríbenos y te contamos lo que sepamos y te avisamos.</p>
+  {{ botonWa(msg, site, "Preguntar por este viaje") }}
+</div>
+{%- endmacro %}
+
+{# ── Fila de píldoras de datos (ficha) ─────────────────────────────────── #}
+{% macro pildorasDatos(viaje, site) -%}
+{%- set pub = viaje.publico -%}
+<div class="pildoras">
+  <span class="pildora pildora--dato">{{ ic.calendario() }} {{ dato(pub.fechas, site, "Hola, ¿qué fechas tiene el viaje a " + pub.destino + "?") }}</span>
+  <span class="pildora pildora--dato">{{ ic.reloj() }} {{ dato(pub.duracion, site, "Hola, ¿cuántos días dura el viaje a " + pub.destino + "?") }}</span>
+  <span class="pildora pildora--dato">{{ ic.avion() }} {% if pub.salida and pub.salida.confirmado %}{{ pub.salida.lugar }}{% else %}Salida desde Tenerife{% endif %}</span>
+  <span class="pildora pildora--dato">{{ ic.reloj() }} {{ dato(pub.regimen_resumen, site, "Hola, ¿qué régimen de comidas tiene el viaje a " + pub.destino + "?") }}</span>
+  {%- if pub.plazas and pub.plazas.mostrar and pub.plazas.estado == "ultimas" %}
+  <span class="pildora pildora--aviso">Últimas plazas</span>
+  {%- elif pub.plazas and pub.plazas.mostrar and pub.plazas.estado == "disponibles" %}
+  <span class="pildora pildora--dato">Plazas disponibles</span>
+  {%- endif %}
+</div>
+{%- endmacro %}

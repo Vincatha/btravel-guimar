@@ -1,0 +1,139 @@
+# Actualizado con la versión corregida aportada por la agencia el 13 de septiembre de 2026.
+orden: 4
+estado: publicado
+fuente:
+  documento: ITINERARIO PAIS VASCO.pdf
+  fecha_documento: null
+  version: Versión corregida confirmada por la agencia el 13 de septiembre de 2026
+  notas: >-
+    Resumen público autorizado por la agencia. Itinerario completo, condiciones y calendario de pagos mediante
+    contacto directo. La versión corregida confirma del 4 al 9 de abril de 2027 en portada y programa.
+publico:
+  destino: País Vasco
+  titular: Nos vamos al País Vasco en abril
+  subtitulo: Bilbao, la costa de Vizcaya y San Sebastián
+  resumen: >
+    Seis días recorriendo el País Vasco de punta a punta —Bilbao, San Juan de Gaztelugatxe, San Sebastián y
+    Vitoria—, en grupo y con acompañante de la agencia desde Güímar. Vuelo directo desde Tenerife Norte.
+  fechas:
+    confirmado: true
+    etiqueta: 4–9 abr 2027
+    inicio: 2027-04-04T00:00:00.000Z
+    fin: 2027-04-09T00:00:00.000Z
+  duracion:
+    confirmado: true
+    etiqueta: 6 días / 5 noches
+  precio:
+    confirmado: true
+    valor: 890
+    moneda: EUR
+    base: por persona en habitación doble
+  suplemento_individual:
+    confirmado: true
+    etiqueta: 220 €
+    valor: 220
+  salida:
+    confirmado: true
+    lugar: Tenerife Norte
+  regimen_resumen:
+    confirmado: true
+    etiqueta: Media pensión + 1 almuerzo
+  plazas:
+    mostrar: false
+    estado: null
+  destacados:
+    confirmado: true
+    items:
+      - San Juan de Gaztelugatxe y sus 241 escalones (escenario de Juego de Tronos)
+      - La bahía de la Concha, en San Sebastián
+      - "El casco viejo de Bilbao: las Siete Calles y el Mercado de la Ribera"
+      - Bermeo y Mundaka, en la Reserva de la Biosfera de Urdaibai
+      - Vitoria y una bodega en la La Rioja
+  ruta_resumida:
+    confirmado: true
+    items:
+      - Bilbao
+      - Gaztelugatxe
+      - Bermeo
+      - Mundaka
+      - San Sebastián
+      - Hondarribia
+      - Vitoria
+  incluye:
+    confirmado: true
+    items:
+      - Vuelo directo Tenerife Norte – Bilbao, ida y vuelta, con maleta facturada de 23 kg
+      - Traslado de Güímar al aeropuerto, ida y vuelta
+      - Autocar durante todo el recorrido
+      - 5 noches en hotel de 4★ en el centro de Bilbao
+      - Media pensión (desayunos y cenas), con agua y vino en las comidas
+      - 1 almuerzo en restaurante
+      - Guías oficiales en las visitas
+      - Visita a una bodega
+      - Acompañante de B Travel Güímar durante todo el viaje
+  no_incluye:
+    confirmado: true
+    items:
+      - Seguro de viaje y cancelación (opcional)
+      - Suplemento de habitación individual
+      - Tasas turísticas o locales que haya que abonar en destino
+      - Cualquier entrada no indicada en «qué incluye»
+      - Almuerzos no indicados en el programa
+  itinerario_resumen:
+    confirmado: true
+    bloques:
+      - dias: Día 1
+        titulo: Vuelo a Bilbao
+        texto: Salida de Güímar al aeropuerto de Tenerife Norte y vuelo directo a Bilbao. Cena y alojamiento.
+      - dias: Día 2
+        titulo: Bilbao
+        texto: >-
+          Visita guiada por el casco antiguo: las Siete Calles, la catedral de Santiago y el Mercado de la
+          Ribera. Tarde libre.
+      - dias: Día 3
+        titulo: Gaztelugatxe, Bermeo y Mundaka
+        texto: >-
+          San Juan de Gaztelugatxe y sus 241 escalones, el puerto pintoresco de Bermeo y el pueblo pesquero de
+          Mundaka, en la Reserva de la Biosfera de Urdaibai.
+      - dias: Día 4
+        titulo: San Sebastián y Hondarribia
+        texto: >-
+          El Palacio de Miramar y la bahía de la Concha, pintxos por el centro, y por la tarde el casco
+          antiguo de Hondarribia.
+      - dias: Día 5
+        titulo: Vitoria y una bodega
+        texto: >-
+          Visita del casco medieval de Vitoria y de la plaza de la Virgen Blanca. Por la tarde, visita a una
+          bodega en La Rioja.
+      - dias: Día 6
+        titulo: Vuelta a Tenerife
+        texto: >-
+          Mañana libre en Bilbao para las últimas compras y pintxos, y vuelo directo de vuelta a Tenerife
+          Norte.
+  galeria:
+    - archivo: viajes/pais-vasco/pais-vasco-02.jpg
+      alt: La bahía de la Concha y la isla de Santa Clara, en San Sebastián
+      placeholder: País Vasco — San Sebastián
+    - archivo: viajes/pais-vasco/pais-vasco-03.jpg
+      alt: El museo Guggenheim junto a la ría del Nervión, en Bilbao
+      placeholder: País Vasco — Bilbao
+    - archivo: viajes/pais-vasco/pais-vasco-05.jpg
+      alt: El puerto pesquero de Bermeo, con barcas y casas de colores
+      placeholder: País Vasco — Bermeo
+privado:
+  disponible: false
+  aviso: Solicita a la agencia el itinerario completo, las condiciones y el calendario de pagos.
+  itinerario: []
+  vuelos: []
+  hoteles: []
+  regimen_detalle: null
+  planes_pago:
+    confirmado: false
+    plazos: []
+  notas_operativas: null
+seo:
+  title: Viaje al País Vasco desde Tenerife · abril 2027 | B Travel Güímar
+  description: >
+    Seis días recorriendo el País Vasco de punta a punta —Bilbao, San Juan de Gaztelugatxe, San Sebastián y
+    Vitoria—, en grupo y con acompañante de la agencia desde Güímar. Vuelo directo desde Tenerife Norte.
+  og_image: viajes/pais-vasco/pais-vasco-02.jpg

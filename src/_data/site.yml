@@ -1,0 +1,177 @@
+# ─────────────────────────────────────────────────────────────────────────────
+#  DATOS GLOBALES DEL SITIO
+#  Se editan aquí; las plantillas los leen. No tocar el HTML.
+# ─────────────────────────────────────────────────────────────────────────────
+
+nombre: "B Travel Güímar"
+nombre_marca: "B travel"
+descripcion_default: "Agencia de viajes en Güímar (Tenerife). Viajes de grupo acompañados a destinos de largo radio con salida desde Canarias."
+
+# Dominio de producción. En Netlify se sobrescribe con la variable de entorno URL.
+# ⟨PENDIENTE: dominio definitivo⟩
+url: "https://btravel-guimar.vincatha.chatgpt.site"
+
+# ── Contacto (prompt §7.1 — verificado) ──────────────────────────────────────
+direccion:
+  calle: "Avda. Santa Cruz, 6"
+  localidad: "Güímar"
+  provincia: "Santa Cruz de Tenerife"
+  region: "Canarias"
+  pais_iso: "ES"
+  cp: "38500"
+
+geo:
+  confirmado: true
+  # Avenida de Santa Cruz, 6 · Güímar (geocodificado con OpenStreetMap/Nominatim).
+  lat: 28.3162078
+  lng: -16.4091329
+
+telefonos:
+  fijo: "922 51 19 36"
+  fijo_tel: "+34922511936"
+  movil: "660 82 85 78"
+  movil_tel: "+34660828578"
+
+email: "guimar@btravel.com"
+
+whatsapp:
+  confirmado: false             # ⟨PENDIENTE: confirmar que el 660 82 85 78 tiene WhatsApp⟩
+  numero: "34660828578"         # formato para wa.me
+
+horario:
+  confirmado: true
+  texto: "Lunes a viernes, de 9:30 a 13:30 y de 16:30 a 19:30"
+  sabados: "Algunos sábados abrimos por la mañana; escríbenos para confirmarlo"
+  # Para los datos estructurados (schema.org). Los sábados no se incluyen
+  # porque son irregulares.
+  schema_org:
+    - "Mo-Fr 09:30-13:30"
+    - "Mo-Fr 16:30-19:30"
+
+# ── Redes (prompt §7.2 · manual RRSS) ────────────────────────────────────────
+# El manual de marca desaconseja abrir perfiles locales sin permiso de central.
+# Se enlaza a los perfiles OFICIALES de la marca salvo que se confirme uno local.
+# Perfiles LOCALES de la oficina de Güímar (verificados en Google, sept. 2026).
+# Son los que se enlazan en el pie y los que declara el sameAs del JSON-LD:
+# le dicen a Google que la web, la ficha y las redes son LA MISMA entidad.
+perfil_local_autorizado: true
+redes_local:
+  facebook: "https://www.facebook.com/btravelguimar/"
+  instagram: "https://www.instagram.com/btravel_guimar_/"
+
+# Ficha de Google (Perfil de Empresa). Pegar aquí la URL larga del listado
+# (Maps → Compartir → Copiar vínculo). Refuerza mucho el sameAs.
+ficha_google: ""            # ⟨PENDIENTE⟩
+
+redes:
+  facebook: "https://www.facebook.com/bthetravelbrand"
+  instagram: "https://www.instagram.com/bthetravelbrand/"
+  youtube: "https://www.youtube.com/@Bthetravelbrand"
+  tiktok: "https://www.tiktok.com/@btravel_es"
+  linkedin: "https://www.linkedin.com/company/b-the-travel-brand/"
+
+# ── Marca ───────────────────────────────────────────────────────────────────
+claim: "Viájate la vida."
+hashtag: "#ViájateLaVida"
+
+# ── Legal (prompt §7.4) ─────────────────────────────────────────────────────
+legal:
+  copyright: "B Travel Güímar · Agencia de la red B travel"
+  sociedad: "Avoris Retail Division, S.L."
+  cif: "B07012107"
+  ci: "BAL005 M/M"
+  ci_confirmado: false          # ⟨PENDIENTE: verificar el código de agencia para Canarias⟩
+
+# ── Mensajes de WhatsApp por defecto (se personalizan por viaje/sección) ─────
+whatsapp_mensajes:
+  general: "Hola, me gustaría información sobre los viajes de B Travel Güímar."
+  hero: "Hola, me gustaría que me contéis vuestros viajes."
+  contacto: "Hola, me gustaría hablar con alguien de B Travel Güímar."
+  faq: "Hola, tengo una duda sobre un viaje."
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  CONTENIDO DE LA PÁGINA DE INICIO
+#  Todo esto se edita aquí, sin tocar plantillas ni HTML.
+# ─────────────────────────────────────────────────────────────────────────────
+home:
+  hero:
+    # El claim de marca (§3.4) se usa UNA sola vez en toda la web: aquí, en la
+    # barra de confianza del hero.
+    claim: "Viájate la vida."
+    # Antetítulo pequeño sobre el H1 (no es el claim).
+    kicker: "Viajes de grupo acompañados desde Tenerife"
+    # Eslogan principal (H1). Cambiar aquí para probar otro.
+    eslogan: "Tu próxima gran historia empieza aquí."
+    subtitulo: >
+      Buscamos el destino, diseñamos el viaje al detalle y te acompañamos por el
+      camino. Con el trato de siempre, aquí al lado.
+    # Tres etiquetas cortas bajo la entradilla. Máximo 3.
+    chips:
+      - "Grupos reducidos"
+      - "Salidas desde Tenerife"
+      - "Pago a plazos"
+    cta_primario: "Ver próximas salidas"
+    cta_secundario: "Hablar por WhatsApp"
+    # Barra de confianza al pie del hero. { fuerte, suave }. Máximo 3.
+    senales:
+      - { fuerte: "Avda. Santa Cruz, 6 · Güímar", suave: "Entra y lo vemos juntos" }
+      - { fuerte: "Salidas desde Tenerife", suave: "La conexión la montamos nosotros" }
+      - { fuerte: "Agencia de la red B travel", suave: "Con el trato de aquí al lado" }
+    foto:
+      # Cuando exista una foto REAL en src/assets/img/home/hero.jpg se usa a
+      # sangre como fondo del hero. Mientras no exista, se ve el degradado de marca.
+      archivo: "home/hero.jpg"
+      alt: "Viajeros de B Travel Güímar disfrutando de uno de sus viajes"
+      placeholder: "FOTO VIAJERA PRINCIPAL — real, sin stock"
+
+  como_trabajamos:
+    titulo: "Tú eliges el viaje; del resto nos encargamos nosotros"
+    intro: >
+      Viajes de grupo, escapadas en pareja o viajes a tu medida, con salida desde
+      Tenerife o desde donde haga falta.
+    pasos:
+      - { n: 1, titulo: "Hablamos", texto: "Nos cuentas qué viaje te apetece o eliges una de nuestras salidas. Resolvemos dudas sin compromiso." }
+      - { n: 2, titulo: "Lo preparamos", texto: "Vuelos, hoteles, traslados, guías y visitas. Tú no tienes que cuadrar nada." }
+      - { n: 3, titulo: "Pagas con calma", texto: "Repartimos el pago en mensualidades hasta la fecha del viaje." }
+      - { n: 4, titulo: "Te acompañamos", texto: "Cuando el viaje lo lleva, viaja contigo alguien de la agencia de principio a fin." }
+
+  porque:
+    titulo: "Por qué la gente confía en nosotros para un viaje importante"
+    entradilla: >
+      No vendemos viajes baratos: te quitamos de encima la parte difícil de
+      organizar un viaje grande y ponemos a alguien de confianza a tu lado.
+    tarjetas:
+      - foto: { archivo: "home/porque/conexion-cabina.jpg", alt: "Interior de un avión con pasajeros e iluminación cálida", placeholder: "Aeropuerto / salida" }
+        titulo: "La conexión, resuelta"
+        texto: "Cuando el viaje sale de la Península, montamos nosotros la conexión desde Canarias. Tú vuelas sin pensar en enlaces."
+      - foto: { archivo: "home/porque/agencia-contigo.jpg", alt: "Integrante del equipo de B Travel junto a la imagen de la agencia", placeholder: "Acompañante con el grupo" }
+        titulo: "Alguien de la agencia contigo"
+        texto: "En los viajes de grupo viaja con vosotros una de las personas que llevan la oficina. Está para resolver, no para hacer de guía."
+      - foto: { archivo: "home/porque/pago-a-plazos.jpg", alt: "Manos con calculadoras junto a facturas y un portátil de B Travel Güímar para organizar el pago del viaje", placeholder: "Planificación del pago del viaje" }
+        titulo: "Pago a plazos, sin agobios"
+        texto: "El viaje se paga poco a poco, en mensualidades, hasta la fecha de salida."
+      - foto: { archivo: "home/porque/fachada-corregida.jpg", alt: "Fachada de la oficina de B Travel Güímar en la Avenida Santa Cruz, con su rótulo y el escaparate de folletos de viajes", placeholder: "Fachada / interior oficina Güímar" }
+        titulo: "La oficina de Güímar, abierta"
+        texto: "Estamos en la Avda. Santa Cruz, 6. Puedes venir a que te lo contemos en persona, sin cita."
+    # Tira de datos objetivos. NO se muestra hasta que sean ciertos y confirmado: true.
+    datos:
+      confirmado: false
+      items: []   # - { cifra: "20 años", texto: "organizando viajes desde Güímar" }
+
+# ── El equipo / los propietarios ────────────────────────────────────────────
+# Poner confirmado: true cuando estén las fotos y los datos reales.
+equipo:
+  confirmado: false
+  titulo: "Quién viaja contigo"
+  intro_fija: >
+    En B Travel Güímar te atienden siempre las mismas personas, y son ellas
+    quienes suelen viajar con los grupos.
+  personas:
+    - foto:
+        archivo: "home/equipo/propietarios.jpg"
+        alt: "Propietarios de B Travel Güímar"
+        placeholder: "⟨FOTO PROPIETARIOS — PENDIENTE⟩"
+      nombre: "⟨NOMBRE — PENDIENTE⟩"
+      funcion: "⟨FUNCIÓN — PENDIENTE⟩"
+      descripcion: "⟨DESCRIPCIÓN — PENDIENTE⟩"
+  sobre_acompanamiento: "⟨TEXTO SOBRE EL ACOMPAÑAMIENTO DURANTE EL VIAJE — PENDIENTE⟩"

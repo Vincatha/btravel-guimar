@@ -1,0 +1,136 @@
+# Actualizado con el itinerario aportado por la agencia el 13 de septiembre de 2026.
+orden: 1
+estado: publicado
+fuente:
+  documento: ITINERARIO LONDRES.pdf.pdf
+  fecha_documento: null
+  version: Itinerario terminado aportado por la agencia el 13 de septiembre de 2026
+  notas: >-
+    Resumen público autorizado por la agencia. Itinerario completo, condiciones y calendario de pagos mediante
+    contacto directo.
+publico:
+  destino: Londres
+  titular: Nos vamos a Londres el Puente de Diciembre
+  subtitulo: Cinco días con las luces encendidas y los mercadillos abiertos
+  resumen: >-
+    Cinco días en Londres durante el Puente de Diciembre, con vuelo directo desde Tenerife Sur y acompañante
+    desde Tenerife. British Museum, Camden Town, Buckingham, Winter Wonderland y las pasarelas de Tower
+    Bridge, con tardes libres para disfrutar del ambiente navideño.
+  fechas:
+    confirmado: true
+    etiqueta: 5–9 dic 2026
+    inicio: 2026-12-05T00:00:00.000Z
+    fin: 2026-12-09T00:00:00.000Z
+  duracion:
+    confirmado: true
+    etiqueta: 5 días / 4 noches
+  precio:
+    confirmado: true
+    valor: 990
+    moneda: EUR
+    base: por persona en habitación doble
+  suplemento_individual:
+    confirmado: true
+    etiqueta: 200 €
+    valor: 200
+  salida:
+    confirmado: true
+    lugar: Tenerife Sur
+  regimen_resumen:
+    confirmado: true
+    etiqueta: Alojamiento y desayuno
+  plazas:
+    mostrar: false
+    estado: null
+  destacados:
+    confirmado: true
+    items:
+      - Vuelo directo desde Tenerife Sur y traslado desde Güímar incluido
+      - British Museum con guía local
+      - Cambio de guardia de Buckingham
+      - Winter Wonderland en Hyde Park
+      - Tower Bridge, subida a las pasarelas
+  ruta_resumida:
+    confirmado: true
+    items:
+      - British Museum
+      - Camden Town
+      - Buckingham
+      - Winter Wonderland
+      - Tower Bridge
+  incluye:
+    confirmado: true
+    items:
+      - Vuelo directo de ida y vuelta Tenerife Sur–Londres, con maleta facturada
+      - Traslado Güímar–aeropuerto, ida y vuelta
+      - 4 noches en hotel de 3 estrellas con desayuno
+      - Guía local de habla española en las visitas
+      - Visita al British Museum y entrada a Tower Bridge
+      - Bono de metro de 3 días
+      - Seguro básico
+      - Acompañante de B Travel desde Tenerife
+  no_incluye:
+    confirmado: true
+    items:
+      - Almuerzos, cenas y gastos personales
+      - Seguro opcional de viaje y cancelación
+      - Tasas turísticas y autorización de entrada (ETA)
+      - Entradas no especificadas en el programa
+  itinerario_resumen:
+    confirmado: true
+    bloques:
+      - dias: 5 diciembre
+        titulo: Llegada a Londres
+        texto: Vuelo directo desde Tenerife Sur y traslado al hotel.
+      - dias: 6 diciembre
+        titulo: British Museum y Camden
+        texto: >-
+          Visita del British Museum con guía local, paseo por Leicester Square y el mercado de Camden Town.
+          Tarde libre.
+      - dias: 7 diciembre
+        titulo: Buckingham y Hyde Park
+        texto: >-
+          Recorrido por Westminster y el entorno de Buckingham, con cambio de guardia según programación.
+          Visita a Winter Wonderland y tiempo libre.
+      - dias: 8 diciembre
+        titulo: El Támesis y Tower Bridge
+        texto: >-
+          San Pablo, Millennium Bridge y entrada a las pasarelas y salas de máquinas de Tower Bridge. Tarde
+          libre para los mercadillos.
+      - dias: 9 diciembre
+        titulo: Regreso a Tenerife
+        texto: Desayuno, traslado al aeropuerto y vuelo directo de vuelta.
+  galeria:
+    - archivo: viajes/londres/londres-01.jpg
+      alt: Big Ben, las Casas del Parlamento y el puente de Westminster
+      placeholder: Londres — Big Ben
+    - archivo: viajes/londres/londres-02.jpg
+      alt: Vista aérea del Támesis con el Tower Bridge al atardecer
+      placeholder: Londres — Tower Bridge
+    - archivo: viajes/londres/londres-03.jpg
+      alt: El London Eye reflejado en el Támesis
+      placeholder: Londres — London Eye
+    - archivo: viajes/londres/londres-04.jpg
+      alt: El barrio financiero de la City con el edificio Gherkin al amanecer
+      placeholder: Londres — la City
+    - archivo: viajes/londres/londres-05.jpg
+      alt: La nave central del Museo de Historia Natural de Londres
+      placeholder: Londres — museo
+privado:
+  disponible: false
+  aviso: Solicita a la agencia el itinerario completo, las condiciones y el calendario de pagos.
+  itinerario: []
+  vuelos: []
+  hoteles: []
+  regimen_detalle: null
+  planes_pago:
+    confirmado: false
+    plazos: []
+  notas_operativas: null
+seo:
+  title: Viaje a Londres desde Tenerife · Puente de Diciembre 2026 | B Travel Güímar
+  description: >-
+    Cinco días en Londres durante el Puente de Diciembre, con vuelo directo desde Tenerife Sur y acompañante
+    desde Tenerife. British Museum, Camden Town, Buckingham, Winter Wonderland y las pasarelas de Tower
+    Bridge, con tardes libres para disfrutar del ambiente navideño.
+  og_image: viajes/londres/og-londres.jpg

@@ -1,0 +1,12 @@
+/* Fotos reales aportadas por el equipo: se conserva el encuadre completo. */
+#nosotros { scroll-margin-top: 72px; }
+#nosotros .nosotros { grid-template-columns: 1fr; gap: 32px; }
+#nosotros .nosotros__texto { order: -1; max-width: 780px; }
+.nosotros__fotos-equipo { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.nosotros__fotos-equipo img { display: block; width: 100%; height: auto; aspect-ratio: 1; border-radius: 24px; box-shadow: 0 8px 28px rgba(20,35,65,.09); }
+@media (max-width: 600px) {
+  .nosotros__fotos-equipo { grid-template-columns: 1fr; gap: 20px; }
+}
+
+/* Mantener el rostro en el recorte horizontal de la tarjeta. */
+.editorial__media img[src="/assets/img/home/porque/agencia-contigo.jpg"] { object-position: center 32%; }

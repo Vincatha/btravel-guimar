@@ -1,0 +1,45 @@
+{% import "macros/iconos.njk" as ic %}
+{% import "macros/ui.njk" as ui %}
+
+{# NOTA: el logotipo de macros/iconos.njk es una RECONSTRUCCIÓN provisional.
+   Sustituir por el archivo oficial b-travel-logo.svg + lockup "Güímar" cuando
+   se confirme. Ver docs/ESTADO.md. #}
+
+<header class="cabecera">
+  <div class="contenedor cabecera__barra">
+    <a class="cabecera__logo" href="/" aria-label="{{ site.nombre }} — inicio">
+      {{ ic.logo() }}
+      <span class="cabecera__sede">Güímar</span>
+    </a>
+
+    <nav class="cabecera__nav" aria-label="Principal">
+      <a href="/#salidas">Próximas salidas</a>
+      <a href="/#como-trabajamos">Cómo trabajamos</a>
+      <a href="/#nosotros">Quiénes somos</a>
+      <a href="/#faq">Preguntas</a>
+      <a href="/#contacto">Contacto</a>
+    </nav>
+
+    <div class="cabecera__acciones">
+      <a class="cabecera__tel" href="tel:{{ site.telefonos.movil_tel }}">
+        {{ ic.telefono() }} <span>{{ site.telefonos.movil }}</span>
+      </a>
+      {{ ui.botonWa(site.whatsapp_mensajes.general, site, "WhatsApp", "btn btn--wa") }}
+      <button class="cabecera__menu-btn" type="button" aria-expanded="false" aria-controls="menu-movil" aria-label="Abrir menú">
+        {{ ic.menu() }}
+      </button>
+    </div>
+  </div>
+
+  <div class="contenedor">
+    <div class="cabecera__menu-panel" id="menu-movil">
+      <a href="/#salidas">Próximas salidas</a>
+      <a href="/#como-trabajamos">Cómo trabajamos</a>
+      <a href="/#por-que">Por qué con nosotros</a>
+      <a href="/#nosotros">Quiénes somos</a>
+      <a href="/#faq">Preguntas frecuentes</a>
+      <a href="/#contacto">Contacto</a>
+      <a href="tel:{{ site.telefonos.movil_tel }}">Llamar: {{ site.telefonos.movil }}</a>
+    </div>
+  </div>
+</header>

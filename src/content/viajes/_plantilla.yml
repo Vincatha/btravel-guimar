@@ -1,0 +1,101 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+#  PLANTILLA DE VIAJE  —  copia este archivo a <slug>.yml para añadir un viaje.
+#  El nombre del archivo (sin .yml) es el "slug": genera /viaje-<slug>.html
+#
+#  REGLA: cada dato lleva su propio "confirmado".
+#    confirmado: false  → la web muestra "Consultar" (enlace a WhatsApp)
+#    confirmado: true   → la web muestra el valor
+#
+#  El bloque "privado" se cifra en el build y NUNCA aparece en el HTML público.
+# ═══════════════════════════════════════════════════════════════════════════════
+
+orden: 99                       # posición en la home (menor = antes)
+
+# ── ESTADO DE LOS DATOS ──────────────────────────────────────────────────────
+#  borrador               → no aparece en la web
+#  pendiente_corporativa  → ficha en modo "en preparación"; sin itinerario privado
+#  pendiente_visto_bueno  → hay versión corporativa; a la espera del OK de la agencia
+#  publicado              → todo visible; indexable; itinerario privado activo
+estado: borrador
+
+# ── TRAZABILIDAD (no se publica) ─────────────────────────────────────────────
+fuente:
+  documento: null
+  fecha_documento: null
+  version: null
+  notas: null
+
+# ── INFORMACIÓN PÚBLICA ──────────────────────────────────────────────────────
+publico:
+  destino: null                 # "Japón"
+  titular: null                 # gancho, tono §9 — "Nos vamos a Japón en mayo"
+  subtitulo: null
+  resumen: null                 # texto corto, SIN datos operativos
+
+  fechas:
+    confirmado: false
+    etiqueta: null              # "9–21 may 2027"
+    inicio: null                # 2027-05-09
+    fin: null                   # 2027-05-21
+  duracion:
+    confirmado: false
+    etiqueta: null              # "13 días / 12 noches"
+  precio:
+    confirmado: false
+    valor: null                 # 3890  (número, sin símbolo)
+    moneda: "EUR"
+    base: "por persona en habitación doble"
+  suplemento_individual:
+    confirmado: false
+    etiqueta: null              # "200 €"  o  "a consultar"
+    valor: null
+  salida:
+    confirmado: false
+    lugar: null                 # "Tenerife Norte" | "Tenerife Sur"
+  regimen_resumen:
+    confirmado: false
+    etiqueta: null              # "Media pensión"
+  plazas:
+    mostrar: false
+    estado: null                # "ultimas" | "disponibles"
+
+  destacados:
+    confirmado: false
+    items: []                   # ["Osaka, Kioto, Nara y Tokio", "Tren bala incluido"]
+
+  ruta_resumida:
+    confirmado: false
+    items: []                   # ["Osaka", "Kioto", "Tokio"]
+
+  incluye:
+    confirmado: false
+    items: []
+  no_incluye:
+    confirmado: false
+    items: []
+
+  itinerario_resumen:
+    confirmado: false
+    bloques: []                 # - { dias: "Días 1–4", titulo: "Osaka", texto: "..." }
+
+  galeria:
+    - { archivo: "viajes/SLUG/SLUG-01.jpg", alt: "", placeholder: "Destino — 1" }
+
+# ── INFORMACIÓN PRIVADA (se cifra; nunca llega al HTML público) ──────────────
+privado:
+  disponible: false             # true solo con versión corporativa + visto bueno
+  aviso: "Pendiente de confirmación de la versión corporativa vigente."
+  itinerario: []                # - { dia: 1, fecha: "9 may", titulo: "...", texto: "..." }
+  vuelos: []                    # - { tramo: "Tenerife Norte → Madrid", horario: "09:55 – 13:45" }
+  hoteles: []                   # - { zona: "Osaka", noches: 3, categoria: "4★", nombre: null }
+  regimen_detalle: null
+  planes_pago:
+    confirmado: false
+    plazos: []                  # - { concepto: "Reserva", importe: null }
+  notas_operativas: null
+
+# ── SEO ─────────────────────────────────────────────────────────────────────
+seo:
+  title: null                   # "Viaje a X desde Tenerife · mes 2027 | B Travel Güímar"
+  description: null             # 150-160 caracteres
+  og_image: "viajes/SLUG/og-SLUG.jpg"

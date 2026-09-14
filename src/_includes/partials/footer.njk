@@ -1,0 +1,55 @@
+{% import "macros/iconos.njk" as ic %}
+
+<footer class="pie">
+  <div class="contenedor">
+    <div class="pie__grid">
+      <div>
+        <strong>{{ site.nombre }}</strong>
+        <p>{{ site.direccion.calle }}, {{ site.direccion.localidad }}<br>
+           {{ site.direccion.provincia }} · {{ site.direccion.region }}</p>
+        <p>
+          <a href="tel:{{ site.telefonos.fijo_tel }}">{{ site.telefonos.fijo }}</a> ·
+          <a href="tel:{{ site.telefonos.movil_tel }}">{{ site.telefonos.movil }}</a><br>
+          <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        </p>
+        <div class="pie__redes">
+          {%- if site.perfil_local_autorizado and site.redes_local %}
+          <a href="{{ site.redes_local.facebook }}" target="_blank" rel="noopener" aria-label="Facebook de B Travel Güímar">{{ ic.red("facebook") }}</a>
+          <a href="{{ site.redes_local.instagram }}" target="_blank" rel="noopener" aria-label="Instagram de B Travel Güímar">{{ ic.red("instagram") }}</a>
+          {%- else %}
+          <a href="{{ site.redes.facebook }}" target="_blank" rel="noopener" aria-label="Facebook de B travel">{{ ic.red("facebook") }}</a>
+          <a href="{{ site.redes.instagram }}" target="_blank" rel="noopener" aria-label="Instagram de B travel">{{ ic.red("instagram") }}</a>
+          {%- endif %}
+          <a href="{{ site.redes.youtube }}" target="_blank" rel="noopener" aria-label="YouTube de B travel">{{ ic.red("youtube") }}</a>
+          <a href="{{ site.redes.tiktok }}" target="_blank" rel="noopener" aria-label="TikTok de B travel">{{ ic.red("tiktok") }}</a>
+          <a href="{{ site.redes.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn de B travel">{{ ic.red("linkedin") }}</a>
+        </div>
+      </div>
+
+      <div>
+        <strong>Viajes de grupo</strong>
+        <ul style="list-style:none;padding:0;margin-top:8px;display:grid;gap:6px">
+          {%- for v in viajes %}
+          <li><a href="/viaje-{{ v.slug }}.html">{{ v.publico.destino }}</a></li>
+          {%- endfor %}
+        </ul>
+      </div>
+
+      <div>
+        <strong>La agencia</strong>
+        <ul style="list-style:none;padding:0;margin-top:8px;display:grid;gap:6px">
+          <li><a href="/#nosotros">Quiénes somos</a></li>
+          <li><a href="/#contacto">Cómo llegar</a></li>
+          <li><a href="/#faq">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="pie__legal">
+      &copy; 2026 {{ site.legal.copyright }}<br>
+      {{ site.legal.sociedad }}{% if site.legal.ci_confirmado %} — Agencia de viajes C.I. {{ site.legal.ci }}{% endif %} · C.I.F. {{ site.legal.cif }}<br>
+      <a href="/aviso-legal.html">Aviso legal</a> · <a href="/privacidad.html">Política de privacidad</a> · <a href="/cookies.html">Política de cookies</a>
+      · <a href="/creditos.html">Créditos de imágenes</a>
+    </p>
+  </div>
+</footer>

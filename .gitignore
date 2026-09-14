@@ -1,0 +1,17 @@
+# Dependencias
+node_modules/
+
+# Salida del build
+_site/
+
+# Generado en cada build (itinerarios cifrados)
+src/_generated/
+
+# Secretos: contraseñas reales de los itinerarios (NUNCA se versionan)
+secrets/passwords.yml
+.env
+
+# Sistema
+.DS_Store
+*.log
+scratchpad/

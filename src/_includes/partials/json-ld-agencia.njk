@@ -1,0 +1,40 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  "name": {{ site.nombre | dump | safe }},
+  "url": {{ site.url | dump | safe }},
+  "email": {{ site.email | dump | safe }},
+  "telephone": {{ site.telefonos.movil_tel | dump | safe }},
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": {{ site.direccion.calle | dump | safe }},
+    "addressLocality": {{ site.direccion.localidad | dump | safe }},
+    "addressRegion": {{ site.direccion.provincia | dump | safe }},
+    {%- if site.direccion.cp %}
+    "postalCode": {{ site.direccion.cp | dump | safe }},
+    {%- endif %}
+    "addressCountry": {{ site.direccion.pais_iso | dump | safe }}
+  },
+  "sameAs": [
+    {%- if site.perfil_local_autorizado and site.redes_local %}
+    {{ site.redes_local.facebook | dump | safe }},
+    {{ site.redes_local.instagram | dump | safe }},
+    {%- endif %}
+    {%- if site.ficha_google %}
+    {{ site.ficha_google | dump | safe }},
+    {%- endif %}
+    {{ site.redes.facebook | dump | safe }},
+    {{ site.redes.instagram | dump | safe }},
+    {{ site.redes.youtube | dump | safe }},
+    {{ site.redes.tiktok | dump | safe }},
+    {{ site.redes.linkedin | dump | safe }}
+  ]
+  {%- if site.geo.confirmado and site.geo.lat %},
+  "geo": { "@type": "GeoCoordinates", "latitude": {{ site.geo.lat }}, "longitude": {{ site.geo.lng }} }
+  {%- endif %}
+  {%- if site.horario.confirmado and site.horario.schema_org %},
+  "openingHours": {{ site.horario.schema_org | dump | safe }}
+  {%- endif %}
+}
+</script>

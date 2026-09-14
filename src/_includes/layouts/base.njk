@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>{{ title or site.nombre }}</title>
+<meta name="description" content="{{ descripcion or site.descripcion_default }}">
+<meta name="robots" content="{{ robots or 'index, follow' }}">
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ site.nombre }}">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="{{ title or site.nombre }}">
+<meta property="og:description" content="{{ descripcion or site.descripcion_default }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+{%- if ogImagen %}
+<meta property="og:image" content="{{ site.url }}/assets/img/{{ ogImagen }}">
+{%- endif %}
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preload" href="/assets/fonts/kerf-stencil-tilde.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap">
+{%- if page.url == "/" %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" crossorigin="">
+{%- endif %}
+
+<style>{% include "css/main.css" %}
+{% include "css/botones-glass.css" %}
+{% include "css/como-trabajamos.css" %}
+{% include "css/equipo-fotos.css" %}</style>
+
+{%- if page.url == "/" %}{% include "partials/json-ld-agencia.njk" %}{% endif %}
+{%- if viaje and viaje.esPublicado %}{% include "partials/json-ld-viaje.njk" %}{% endif %}
+</head>
+<body class="{{ 'es-home' if page.url == '/' else '' }}">
+<a class="salto-al-contenido" href="#contenido">Saltar al contenido</a>
+
+{% include "partials/header.njk" %}
+
+<main id="contenido">
+{{ content | safe }}
+</main>
+
+{% include "partials/footer.njk" %}
+{% include "partials/whatsapp-fab.njk" %}
+
+<script>{% include "js/ui.js" %}</script>
+{%- if viaje %}
+<script>{% include "js/itinerario-privado.js" %}</script>
+{%- endif %}
+{%- if page.url == "/" %}
+<script type="module" src="/assets/js/pasos-liquidglass.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" crossorigin=""></script>
+<script>{% include "js/mapa.js" %}</script>
+{%- endif %}
+</body>
+</html>
