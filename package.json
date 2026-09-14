@@ -6,7 +6,7 @@
   "description": "Web de B Travel Güímar — viajes de grupo desde Tenerife",
   "scripts": {
     "cifrar": "node scripts/cifrar-itinerarios.mjs",
-    "build": "npm run cifrar && eleventy && npm run verificar",
+    "build": "npm run cifrar && eleventy && npm run verificar && node scripts/preparar-sites.mjs",
     "start": "npm run cifrar && eleventy --serve",
     "dev": "npm run start",
     "verificar": "node scripts/verificar-privado.mjs"

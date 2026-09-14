@@ -3,6 +3,7 @@ node_modules/
 
 # Salida del build
 _site/
+dist/
 
 # Generado en cada build (itinerarios cifrados)
 src/_generated/
