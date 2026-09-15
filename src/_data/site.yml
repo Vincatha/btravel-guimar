@@ -9,7 +9,7 @@ descripcion_default: "Agencia de viajes en Güímar (Tenerife). Viajes de grupo 
 
 # Dominio de producción. En Netlify se sobrescribe con la variable de entorno URL.
 # ⟨PENDIENTE: dominio definitivo⟩
-url: "https://btravel-guimar.vincatha.chatgpt.site"
+url: "https://btravel-guimar.com"
 
 # ── Contacto (prompt §7.1 — verificado) ──────────────────────────────────────
 direccion:
