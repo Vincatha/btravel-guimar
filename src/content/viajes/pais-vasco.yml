@@ -111,9 +111,9 @@ publico:
           Mañana libre en Bilbao para las últimas compras y pintxos, y vuelo directo de vuelta a Tenerife
           Norte.
   galeria:
-    - archivo: viajes/pais-vasco/pais-vasco-02.jpg
-      alt: La bahía de la Concha y la isla de Santa Clara, en San Sebastián
-      placeholder: País Vasco — San Sebastián
+    - archivo: viajes/pais-vasco/gaztelugatxe.jpg
+      alt: Camino de piedra hacia la ermita de San Juan de Gaztelugatxe junto al mar
+      placeholder: País Vasco — San Juan de Gaztelugatxe
     - archivo: viajes/pais-vasco/pais-vasco-03.jpg
       alt: El museo Guggenheim junto a la ría del Nervión, en Bilbao
       placeholder: País Vasco — Bilbao
@@ -136,4 +136,4 @@ seo:
   description: >
     Seis días recorriendo el País Vasco de punta a punta —Bilbao, San Juan de Gaztelugatxe, San Sebastián y
     Vitoria—, en grupo y con acompañante de la agencia desde Güímar. Vuelo directo desde Tenerife Norte.
-  og_image: viajes/pais-vasco/pais-vasco-02.jpg
+  og_image: viajes/pais-vasco/gaztelugatxe.jpg

@@ -58,4 +58,6 @@ Fotografías de destinos e imágenes de apoyo. Algunas se han adaptado de tamañ
 | `viajes/belgica-holanda/belgica-holanda-05.jpg` | Najib Samatar (Unsplash) | [Unsplash License](https://unsplash.com/license) | Fotografía aportada por la agencia: `najib-samatar-SXcA2DfasvM-unsplash.jpg` |
 | `viajes/belgica-holanda/belgica-holanda-06.jpg` | Thomas Bormans (Unsplash) | [Unsplash License](https://unsplash.com/license) | Fotografía aportada por la agencia: `thomas-bormans-kNmlCjM3apA-unsplash.jpg` |
 
+| `viajes/pais-vasco/gaztelugatxe.jpg` | Autor no facilitado | Fotografía facilitada por la agencia | `images.jpeg` |
+
 </div></section>
