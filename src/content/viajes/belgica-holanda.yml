@@ -1,0 +1,126 @@
+# Itinerario aportado por la agencia el 22 de septiembre de 2026.
+orden: 4.5
+estado: publicado
+fuente:
+  documento: ITINERARIO BÉLGICA HOLANDA.pdf
+  fecha_documento: null
+  version: Itinerario aportado por la agencia el 22 de septiembre de 2026
+  notas: Resumen público del programa. Itinerario completo, condiciones y pagos mediante contacto directo.
+publico:
+  destino: Bélgica y Holanda
+  titular: Bélgica y Holanda en primavera
+  subtitulo: Tulipanes, canales y ciudades con historia
+  resumen: >-
+    Ocho días para descubrir Bélgica y Holanda en grupo, con salida desde Tenerife Norte y acompañante
+    de B Travel Güímar durante todo el viaje. De las ciudades históricas de Bruselas, Brujas y Gante
+    a los jardines de Keukenhof, los canales de Ámsterdam y los pueblos del norte de Holanda.
+  fechas:
+    confirmado: true
+    etiqueta: 13–20 abr 2027
+    inicio: 2027-04-13T00:00:00.000Z
+    fin: 2027-04-20T00:00:00.000Z
+  duracion:
+    confirmado: true
+    etiqueta: 8 días / 7 noches
+  precio:
+    confirmado: true
+    valor: 2090
+    moneda: EUR
+    base: por persona en habitación doble
+  suplemento_individual:
+    confirmado: true
+    etiqueta: 590 €
+    valor: 590
+  salida:
+    confirmado: true
+    lugar: Tenerife Norte
+  regimen_resumen:
+    confirmado: true
+    etiqueta: 7 desayunos, 7 cenas y 5 almuerzos
+  plazas:
+    mostrar: false
+    estado: null
+  destacados:
+    confirmado: true
+    items:
+      - Jardines de tulipanes de Keukenhof, con entrada incluida
+      - Bruselas, Brujas y Gante con su patrimonio y sus canales
+      - Amberes, Lovaina y Rotterdam
+      - Ámsterdam, Zaanse Schans y Volendam
+      - Acompañante de B Travel Güímar durante todo el viaje
+  ruta_resumida:
+    confirmado: true
+    items: [Bruselas, Brujas, Gante, Amberes, Lovaina, Rotterdam, La Haya, Keukenhof, Ámsterdam, Zaanse Schans, Volendam]
+  incluye:
+    confirmado: true
+    items:
+      - Vuelos Tenerife Norte–Bruselas y Ámsterdam–Tenerife Norte, con escala en Madrid y maleta facturada
+      - Autocar con aire acondicionado durante todo el recorrido
+      - 7 noches en hoteles de 3 estrellas en Bruselas y La Haya
+      - 7 desayunos, 7 cenas y 5 almuerzos
+      - Guías locales de habla hispana
+      - Todas las visitas indicadas en el itinerario
+      - Entrada a los jardines de Keukenhof
+      - Acompañante de B Travel Güímar durante todo el viaje
+  no_incluye:
+    confirmado: true
+    items:
+      - Seguro de viaje y cancelación opcional (30 €)
+      - Bebidas en las comidas
+      - Almuerzos no especificados en el itinerario
+      - Servicios no indicados en el apartado de incluidos
+  itinerario_resumen:
+    confirmado: true
+    bloques:
+      - dias: 13 abril
+        titulo: De Tenerife a Bruselas
+        texto: Vuelo desde Tenerife Norte con escala en Madrid. Llegada, traslado al hotel y cena.
+      - dias: 14 abril
+        titulo: El corazón de Bruselas
+        texto: Visita guiada a pie por el centro histórico, con la Grand Place, las Galerías Saint Hubert y el Manneken Pis. Almuerzo y tarde libres.
+      - dias: 15 abril
+        titulo: Brujas y Gante
+        texto: Recorrido a pie por la Brujas medieval y sus canales. Almuerzo en restaurante y visita de Gante antes de regresar a Bruselas.
+      - dias: 16 abril
+        titulo: Amberes y Lovaina
+        texto: Visita del centro histórico de Amberes y almuerzo en restaurante. Por la tarde, descubrimos la ciudad universitaria de Lovaina.
+      - dias: 17 abril
+        titulo: Rotterdam y La Haya
+        texto: Visita de Rotterdam, sus monumentos, sus puentes y el mercado Markthal. Almuerzo y traslado a La Haya, donde nos alojaremos.
+      - dias: 18 abril
+        titulo: Keukenhof y Ámsterdam
+        texto: Visita de los jardines de tulipanes de Keukenhof. Almuerzo y recorrido guiado por Ámsterdam, con la Plaza Dam y su entorno monumental.
+      - dias: 19 abril
+        titulo: Zaanse Schans y Volendam
+        texto: Un día entre casas tradicionales, molinos y paisajes rurales. Almuerzo en restaurante y visita del pueblo pesquero de Volendam.
+      - dias: 20 abril
+        titulo: Regreso a Tenerife
+        texto: Desayuno y traslado al aeropuerto de Ámsterdam. Vuelo de regreso a Tenerife Norte con escala en Madrid.
+  galeria:
+    - archivo: viajes/belgica-holanda/belgica-holanda-01.jpg
+      alt: Campo de tulipanes naranjas bajo un cielo azul
+    - archivo: viajes/belgica-holanda/belgica-holanda-02.jpg
+      alt: Casas de colores y bicicletas junto a un canal de Ámsterdam
+    - archivo: viajes/belgica-holanda/belgica-holanda-03.jpg
+      alt: Arco del Cincuentenario en Bruselas
+    - archivo: viajes/belgica-holanda/belgica-holanda-04.jpg
+      alt: Iglesia de San Nicolás y noria en el centro de Gante
+    - archivo: viajes/belgica-holanda/belgica-holanda-05.jpg
+      alt: Jardines del Mont des Arts en Bruselas al atardecer
+    - archivo: viajes/belgica-holanda/belgica-holanda-06.jpg
+      alt: Molinos tradicionales junto al agua en Holanda al atardecer
+privado:
+  disponible: false
+  aviso: Solicita a la agencia el itinerario completo, las condiciones y el calendario de pagos.
+  itinerario: []
+  vuelos: []
+  hoteles: []
+  regimen_detalle: null
+  planes_pago:
+    confirmado: false
+    plazos: []
+  notas_operativas: null
+seo:
+  title: Bélgica y Holanda desde Tenerife · Abril 2027 | B Travel Güímar
+  description: Viaje de grupo del 13 al 20 de abril de 2027 desde Tenerife Norte. Bruselas, Brujas, Ámsterdam y Keukenhof, con acompañante. 8 días desde 2.090 €.
+  og_image: viajes/belgica-holanda/og-belgica-holanda.jpg

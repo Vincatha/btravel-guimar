@@ -125,3 +125,7 @@ Despliegue: appgdep_6aa81da8359c8191b11d138e64117fe1 — succeeded.
 Se conserva Ávoris Retail Division, S.L. / B07012107 por confirmación de la usuaria. La validación de central sigue pendiente.
 Aviso legal, privacidad, cookies y créditos añadidos; 15 páginas verificadas.
 Pendiente: compartir el enlace en el canal; Safari estaba siendo utilizado y bloqueó la interacción.
+
+## Bélgica y Holanda — 22 septiembre 2026
+
+Añadido el viaje del 13 al 20 de abril de 2027: 8 días / 7 noches, salida de Tenerife Norte, 2.090 € por persona en doble y suplemento individual de 590 €. Resumen de los ocho días, servicios incluidos y seis fotos aportadas por la agencia optimizadas para web. Seguro opcional de 30 € no incluido. Se detallan 7 desayunos, 7 cenas y 5 almuerzos, evitando la etiqueta imprecisa «media pensión» del documento. El PDF y los pagos se solicitan directamente a la agencia, como en el resto de viajes.
