@@ -889,6 +889,18 @@ dialog.modal::backdrop { background: rgba(20,22,28,.45); }
 
 /* --- Estado "en preparación" en la ficha -------------------- */
 .ficha-hero { background: var(--hueso); }
+/* Fotografía propia de cada destino, con velo para asegurar la lectura. */
+.ficha-hero--foto { position: relative; isolation: isolate; background: #16272c; color: #fff; }
+.ficha-hero__banner { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
+.ficha-hero__banner::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(10,22,28,.88), rgba(10,22,28,.68) 58%, rgba(10,22,28,.28)); }
+.ficha-hero__banner img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.ficha-hero--foto .ficha-hero__cuerpo { min-height: 460px; --gris-txt: #edf0f2; }
+.ficha-hero--foto h1 { color: #fff; }
+.ficha-hero--foto .pildora { background: #fff; color: #1d1d1f; }
+@media (max-width: 560px) {
+  .ficha-hero__banner::after { background: rgba(10,22,28,.76); }
+  .ficha-hero--foto .ficha-hero__cuerpo { min-height: 0; }
+}
 .ficha-hero__cuerpo { padding-block: var(--e6); }
 .ficha-seccion { padding-block: var(--e6); }
 .ficha-seccion + .ficha-seccion { border-top: 1px solid var(--hairline); }

@@ -11,7 +11,12 @@ layout: layouts/base.njk
 <article>
 
   <!-- HERO -->
-  <section class="ficha-hero">
+  <section class="ficha-hero{% if pub.galeria and pub.galeria|length %} ficha-hero--foto{% endif %}">
+    {%- if pub.galeria and pub.galeria|length %}
+    <div class="ficha-hero__banner">
+      {% foto pub.galeria[0], { w: 1600, h: 640, prioridad: true } %}
+    </div>
+    {%- endif %}
     <div class="contenedor ficha-hero__cuerpo">
       <p class="pildora pildora--neutra">Viaje de grupo · Salida desde Tenerife</p>
       <h1>{{ pub.titular or ("Viaje a " + pub.destino) }}</h1>
