@@ -62,7 +62,7 @@ solo se editan ahí si quieres cambiar un pie de foto o añadir otra persona al 
 
 ## Por viaje  (`src/assets/img/viajes/<slug>/`)
 
-Para cada uno de: `vietnam`, `japon`, `londres`, `escocia`, `sri-lanka-turquia`
+Para cada uno de: `vietnam`, `japon`, `londres`, `escocia`
 
 | Archivo | Contenido | Proporción | Peso máx. |
 |---|---|---|---|

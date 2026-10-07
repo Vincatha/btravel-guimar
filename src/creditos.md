@@ -31,12 +31,6 @@ Fotografías de destinos e imágenes de apoyo. Algunas se han adaptado de tamañ
 | `viajes/londres/londres-03.jpg` | Ismail Merad (Unsplash) | [Unsplash License](https://unsplash.com/license) | [Unsplash](https://unsplash.com/photos/IWOo59NUXBk) |
 | `viajes/londres/londres-04.jpg` | Alev Takil (Unsplash) | [Unsplash License](https://unsplash.com/license) | [Unsplash](https://unsplash.com/photos/7ojyp-IXW7w) |
 | `viajes/londres/londres-05.jpg` | Claudio Testa (Unsplash) | [Unsplash License](https://unsplash.com/license) | [Unsplash](https://unsplash.com/photos/iqeG5xA96M4) |
-| `viajes/sri-lanka-turquia/sri-lanka-turquia-01.jpg` | Dylan Shaw (Unsplash) | [Unsplash License](https://unsplash.com/license) | [Unsplash](https://unsplash.com/photos/smUAKwMT8XA) |
-| `viajes/sri-lanka-turquia/sri-lanka-turquia-02.jpg` | Gemmmm (Unsplash) | [Unsplash License](https://unsplash.com/license) | [Unsplash](https://unsplash.com/photos/BS8a67PahbM) |
-| `viajes/sri-lanka-turquia/sri-lanka-turquia-03.jpg` | Alex Azabache (Unsplash) | [Unsplash License](https://unsplash.com/license) | [Unsplash](https://unsplash.com/photos/hZhhVLLKJQ4) |
-| `viajes/sri-lanka-turquia/sri-lanka-turquia-04.jpg` | Daniela Cuevas (Unsplash) | [Unsplash License](https://unsplash.com/license) | [Unsplash](https://unsplash.com/photos/t7YycgAoVSw) |
-| `viajes/sri-lanka-turquia/sri-lanka-turquia-05.jpg` | Fatih Yürür (Unsplash) | [Unsplash License](https://unsplash.com/license) | [Unsplash](https://unsplash.com/photos/kNSREmtaGOE) |
-| `viajes/sri-lanka-turquia/sri-lanka-turquia-06.jpg` | Enes Aktaş (Unsplash) | [Unsplash License](https://unsplash.com/license) | [Unsplash](https://unsplash.com/photos/tR05vRFVa-4) |
 | `viajes/pais-vasco/pais-vasco-02.jpg` | Hmvg (Wikimedia Commons) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Commons](https://commons.wikimedia.org/wiki/File:Vista_de_San_Sebasti%C3%A1n_desde_el_monte_Igueldo.jpg) |
 | `viajes/pais-vasco/pais-vasco-03.jpg` | PA (Wikimedia Commons) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Commons](https://commons.wikimedia.org/wiki/File:Bilbao_-_Gug.jpg) |
 | `viajes/pais-vasco/pais-vasco-05.jpg` | aherrero (Flickr / Wikimedia Commons) | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) | [Commons](https://commons.wikimedia.org/wiki/File:Puerto_de_Bermeo.jpg) |

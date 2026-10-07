@@ -19,7 +19,6 @@ No se incorporan los PDF ni los calendarios de pago a la web.
 | Viaje | Fechas | Precio por persona en doble |
 |---|---|---|
 | Londres | 5–9 diciembre 2026 | 990 € |
-| Sri Lanka & Turquía | 21 febrero–5 marzo 2027 | 2.980 € |
 | Vietnam | 18–30 marzo 2027 | 2.940 € |
 | País Vasco | 4–9 abril 2027 | 890 € |
 | Turquía | 14–22 abril 2027 | 2.190 € |
@@ -35,7 +34,6 @@ No se incorporan los PDF ni los calendarios de pago a la web.
 - Costa Brava: almuerzo final incluido en el día a día y excluido en condiciones. Se remite esa comida a consulta.
 - Turquía: una cabecera dice febrero; se usa abril, coherente con portada y recorrido. No se publican horarios de vuelos contradictorios.
 - Asturias: subida a Lagos de Covadonga no incluida y condicionada por el tiempo; Playa de las Catedrales según marea.
-- Sri Lanka: el documento actual suma ocho noches en Sri Lanka, coherentes con el apartado incluye.
 - Londres: precio actualizado a 990 € y alojamiento con desayuno. No se publican tarifas de ETA ni calendarios de mercadillos como información vigente.
 
 ## Pendientes conocidos
